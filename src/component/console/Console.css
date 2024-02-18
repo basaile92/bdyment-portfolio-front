@@ -1,0 +1,7 @@
+.console {
+  background: #14190f;
+  height: 100vh;
+  background-size: cover;
+  user-select: none;
+  font-size: 1em;
+}
