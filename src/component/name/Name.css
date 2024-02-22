@@ -1,22 +1,21 @@
 .name-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .name {
-    font-family: UbuntuMono-Regular;
-    color: rgb(255, 255, 255, 80%);
-    background-color: rgb(255, 255, 255, 20%);
-
+  font-family: UbuntuMono-Regular;
+  color: rgb(255, 255, 255, 80%);
+  background-color: rgb(255, 255, 255, 20%);
 }
 
 .name-separator {
-    font-family: UbuntuMono-Regular;
-    color: rgb(0, 0, 0, 50%);
-    background-color: rgba(61, 134, 203, 0.9);
+  font-family: UbuntuMono-Regular;
+  color: rgb(0, 0, 0, 50%);
+  background-color: rgba(61, 134, 203, 0.9);
 }
 
 .second-name-separator {
-    font-family: UbuntuMono-Regular;
-    color: rgba(61, 134, 203, 0.9);
+  font-family: UbuntuMono-Regular;
+  color: rgba(61, 134, 203, 0.9);
 }
