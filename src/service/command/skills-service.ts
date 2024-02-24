@@ -1,15 +1,19 @@
 import { getSkills, getSkillsByCategory } from "../api/skills-api-service";
 import { SkillDto } from "../../dto/skill-dto";
+import {
+  separateByComma,
+  separateByNewLine,
+} from "../../utils/separation-utils";
 
 export async function skills(parameter: string): Promise<string> {
   if (!parameter) {
     return Array.from(groupByCategory(await getSkills()))
       .map(skillsByCategoryToString)
-      .reduce(skillsByCategoriesJoinString);
+      .reduce(separateByNewLine);
   }
   return (await getSkillsByCategory(parameter))
     .map((skill) => skill.name)
-    .reduce(skillJoinString);
+    .reduce(separateByComma);
 }
 
 function groupByCategory(array: SkillDto[]): Map<string, string[]> {
@@ -23,17 +27,10 @@ function groupByCategory(array: SkillDto[]): Map<string, string[]> {
 }
 
 function skillsByCategoryToString(skillsByCategory: [string, string[]]) {
-  return `${skillsByCategory[0]}: ${skillsByCategory[1].reduce(skillJoinString)}`;
+  return `<div><div class="subject">${skillsByCategory[0]}:</div>
+               <div>${skillsByCategory[1].map(skillToString).reduce(separateByComma)}</div></div>`;
 }
 
-function skillsByCategoriesJoinString(
-  string1: string,
-  string2: string,
-): string {
-  return `${string1}
-          ${string2}`;
-}
-
-function skillJoinString(string1: string, string2: string): string {
-  return `${string1}, ${string2}`;
+function skillToString(skill: string): string {
+  return `<span class="parameter">${skill}</span>`;
 }

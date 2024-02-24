@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #14190f;
 }
 
 code {
@@ -39,3 +40,57 @@ code {
     local("UbuntuMono-Regular"),
     url("fonts/UbuntuMono-Regular.ttf") format("truetype");
 }
+
+.title {
+  font-weight: bolder;
+  color: rgba(61, 134, 203, 0.9);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.second-italic {
+  font-style: italic;
+  color: rgba(61, 134, 203, 0.9);
+}
+
+.website {
+  color: rgba(61, 134, 203, 0.9);
+  text-decoration: underline;
+  z-index: 3;
+  user-select: auto;
+}
+
+.label {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.important-value {
+  font-weight: bold;
+  color: rgba(61, 134, 203, 0.9);
+}
+
+.native {
+  color: green;
+}
+
+.fluent {
+  color: yellow;
+}
+
+.beginner {
+  color: red;
+}
+
+.subject {
+  font-weight: bold;
+}
+
+.parameter {
+  font-weight: bold;
+  color: rgba(61, 134, 203, 0.9);
+}
+
+

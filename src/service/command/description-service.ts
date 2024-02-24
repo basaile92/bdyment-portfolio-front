@@ -10,9 +10,11 @@ export async function description(parameter: string): Promise<string> {
 }
 
 function descriptionToString(description: DescriptionDto): string {
-  return `${description.name} ${ageToString(description.age)} ${description.job}`;
+  return `<div><span class="label">Name:</span><span class="important-value"> ${description.name}</span></div><br/>
+          <div><span class="label">Age:</span> ${ageToString(description.age)}</div><br/>
+          <div><span class="label">Job:</span><span class="important-value"> ${description.job}</span></div>  `;
 }
 
 function ageToString(age: AgeDto): string {
-  return `Age: in Years:${age.timeInYear} in Days:${age.timeInDay} In hours:${age.timeInHour}`;
+  return `<span class="important-value">${age.timeInYear}</span> years or <span class="important-value">${age.timeInDay}</span> days or <span class="important-value">${age.timeInHour}</span> hours`;
 }

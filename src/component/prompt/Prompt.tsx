@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Prompt.css";
 import Name from "../name/Name";
 import submitCommand from "../../service/console-service";
@@ -17,8 +17,18 @@ import HistoryLine from "../../model/history-line";
 function Prompt(props: any) {
   let [commandLine, setCommandLine] = useState("");
   let [idArrowPicker, setIdArrowPicker] = useState(0);
+  const ref = useRef<HTMLDivElement>(null);
   let addHistoryLine = props.addHistoryLine;
+  let clearHistory = props.clearHistory;
   let history: HistoryLine[] = props.history;
+  useEffect(() => {
+    if (history.length) {
+      ref.current?.scrollIntoView({
+        block: "end",
+      });
+    }
+  }, [history.length]);
+
   let onKeyDown = (e: any) => {
     if (isArrowWithShiftDown(e)) {
       removeAllBehave(e);
@@ -38,6 +48,10 @@ function Prompt(props: any) {
       if (idArrowPicker < history.length - 1) {
         idArrowPickerValue = idArrowPickerValue + 1;
         setCommandLine(history[idArrowPickerValue].command);
+      }
+      if (idArrowPicker === history.length - 1) {
+        idArrowPickerValue = idArrowPickerValue + 1;
+        setCommandLine("");
       }
       setIdArrowPicker(idArrowPickerValue);
     }
@@ -59,25 +73,28 @@ function Prompt(props: any) {
     if (isEnterDown(e)) {
       removeAllBehave(e);
       const length = history.length;
-      submitCommand(commandLine)
-        .then((response) =>
-          addHistoryLine(new HistoryLine(new Date(), commandLine, response)),
-        )
-        .catch(() =>
-          addHistoryLine(
-            new HistoryLine(
-              new Date(),
-              commandLine,
-              // TODO: use ERROR
-              "The command line is not available because server is down.",
+      if (commandLine === "clear") {
+        clearHistory();
+        setCommandLine("");
+      } else
+        submitCommand(commandLine)
+          .then((response) =>
+            addHistoryLine(new HistoryLine(new Date(), commandLine, response)),
+          )
+          .catch(() =>
+            addHistoryLine(
+              new HistoryLine(
+                new Date(),
+                commandLine,
+                // TODO: use ERROR
+                "The command line is not available because server is down.",
+              ),
             ),
-          ),
-        )
-        .finally(() => {
-          setIdArrowPicker(length + 1);
-          setCommandLine("");
-          window.scrollTo(0, document.body.offsetHeight);
-        });
+          )
+          .finally(() => {
+            setIdArrowPicker(length + 1);
+            setCommandLine("");
+          });
     }
   };
 
@@ -89,12 +106,14 @@ function Prompt(props: any) {
     <div className="prompt-container">
       <Name />
       <textarea
+        id={"prompt"}
         className="prompt"
         rows={1}
         onKeyDown={onKeyDown}
         value={commandLine}
         onChange={onChangeCommandLine}
       />
+      <div ref={ref}></div>
     </div>
   );
 }

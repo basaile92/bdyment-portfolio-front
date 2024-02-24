@@ -6,7 +6,7 @@ function Command(props: any) {
   return (
     <div className="command-container">
       <Name />
-      <div className="command">{props.children}</div>
+      <div className="subject">{props.children}</div>
     </div>
   );
 }

@@ -1,29 +1,28 @@
 import { getStudies, getStudiesByYear } from "../api/studies-api-service";
 import { StudyDto } from "../../dto/study-dto";
 import { isInteger } from "../../utils/type-utils";
+import { separateByNewLine } from "../../utils/separation-utils";
+import { displayDatesAndPlace } from "../../utils/value-utils";
 
 export async function studies(parameter: string): Promise<string> {
   if (!parameter) {
-    return (await getStudies()).map(studyToString).reduce(joinString);
+    return (await getStudies()).map(studyToString).reduce(separateByNewLine);
   }
   if (isInteger(parameter)) {
     return (await getStudiesByYear(Number.parseInt(parameter)))
       .map(studyToString)
-      .reduce(joinString);
+      .reduce(separateByNewLine);
   }
   // TODO: Error
   return "";
 }
 
 function studyToString(study: StudyDto): string {
-  return `${study.label};${study.place}\n
-            ${study.school}
-            ${study.startYear}${!study.isCurrent ? `-${study.endYear}` : "~"}\n
-            ${study.diploma}${study.degree}`;
-}
-
-function joinString(string1: string, string2: string): string {
-  return `${string1}
-
-            ${string2}`;
+  return `<div><div>
+            <span class="title">${study.label}</span>
+          </div>
+          ${displayDatesAndPlace(study.startYear, study.endYear, study.isCurrent, study.place)}
+          <div class="second-italic">${study.school}</div>
+          <div>${study.diploma} (${study.degree})</div>
+          </div>`;
 }

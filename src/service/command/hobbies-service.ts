@@ -1,13 +1,14 @@
 import { getHobbies } from "../api/hobbies-api-service";
+import { separateByComma } from "../../utils/separation-utils";
 
 export async function hobbies(parameter: string): Promise<string> {
   if (!parameter) {
-    return (await getHobbies()).reduce(joinString);
+    return (await getHobbies()).map(hobbiesToString).reduce(separateByComma);
   }
   // TODO: Error
   return "";
 }
 
-function joinString(string1: string, string2: string): string {
-  return `${string1}, ${string2}`;
+function hobbiesToString(hobbies: string): string {
+  return `<span class="important-value">${hobbies}</span>`;
 }

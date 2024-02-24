@@ -6,39 +6,48 @@ import {
 import { ProjectDto } from "../../dto/project-dto";
 import { isInteger } from "../../utils/type-utils";
 import { SkillDto } from "../../dto/skill-dto";
+import {
+  separateByComma,
+  separateByNewLine,
+} from "../../utils/separation-utils";
+import {
+  displayDatesAndPlace,
+  displayValueIfPresent,
+} from "../../utils/value-utils";
 
 export async function projects(parameter: string): Promise<string> {
   if (!parameter) {
-    return (await getProjects()).map(projectToString).reduce(projectJoinString);
+    return (await getProjects()).map(projectToString).reduce(separateByNewLine);
   }
   if (isInteger(parameter)) {
     return (await getProjectsByYear(Number.parseInt(parameter)))
       .map(projectToString)
-      .reduce(projectJoinString);
+      .reduce(separateByNewLine);
   }
   return (await getProjectsBySkill(parameter))
     .map(projectToString)
-    .reduce(projectJoinString);
+    .reduce(separateByNewLine);
 }
 
 function projectToString(project: ProjectDto): string {
-  return `${project.name}---${project.role}\n
+  return `<div><div>
+            <span class="title">${project.name}</span>
+            <span class="subject">${project.role}</span>
+          </div>
+          ${displayValueIfPresent(
+            project.website,
+            `<a class="website" href="${project.website}">
             ${project.website}
-            ${project.startYear}${!project.isCurrent ? `-${project.endYear}` : "~"}\n
-            ${project.description}\n
-            ${project.skills.map(skillToString).reduce(skillJoinString)}`;
+          </a>`,
+          )}
+
+          ${displayDatesAndPlace(project.startYear, project.endYear, project.isCurrent)}
+          <br/><div> ${project.description} </div>
+          <br/>
+           <div class="italic">${project.skills.map(skillToString).reduce(separateByComma)}</div>
+          </div>`;
 }
 
 function skillToString(skill: SkillDto): string {
   return `${skill.name}`;
-}
-
-function skillJoinString(string1: string, string2: string): string {
-  return `${string1}, ${string2}`;
-}
-
-function projectJoinString(string1: string, string2: string): string {
-  return `${string1}
-
-            ${string2}`;
 }
