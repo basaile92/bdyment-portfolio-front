@@ -8,18 +8,23 @@ import HistoryLine from "../../model/history-line";
 
 function Console() {
   const [history, setHistory] = useState<HistoryLine[]>([]);
+  const addHistoryLine = (historyLine: HistoryLine) => {
+    setHistory([...history, historyLine]);
+  };
   return (
     <div>
       <Bar />
       <label>
         <div className="console">
           {history.map((historyLine) => (
-            <div>
+            <div key={historyLine.date}>
               <Command>{historyLine.command}</Command>
-              <Response>{historyLine.response}</Response>
+              {historyLine.response && (
+                <Response>{historyLine.response}</Response>
+              )}
             </div>
           ))}
-          <Prompt></Prompt>
+          <Prompt addHistoryLine={addHistoryLine} history={history}></Prompt>
         </div>
       </label>
     </div>

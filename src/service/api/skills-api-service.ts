@@ -1,4 +1,4 @@
-import { SkillDto } from "../dto/skill-dto";
+import { SkillDto } from "../../dto/skill-dto";
 import { gql } from "graphql-request/build/cjs";
 import { requestApi } from "./api-service";
 

@@ -1,21 +1,17 @@
-import { gql } from "graphql-request";
-import { requestApi } from "./api-service";
-import { CompanyDto } from "../dto/company-dto";
-import { DescriptionDto } from "../dto/description-dto";
+import { getDescription } from "./api/description-api-service";
+import { AgeDto, DescriptionDto } from "../dto/description-dto";
 
-export async function getDescription(): Promise<DescriptionDto> {
-  const descriptionQuery = gql`
-    query description {
-      description {
-        name
-        age {
-          timeInHour
-          timeInDay
-          timeInYear
-        }
-        job
-      }
-    }
-  `;
-  return (await requestApi(descriptionQuery))["description"];
+export async function description(parameter: string): Promise<string> {
+  if (!parameter) {
+    return descriptionToString(await getDescription());
+  }
+  return "";
+}
+
+function descriptionToString(description: DescriptionDto): string {
+  return `${description.name} ${ageToString(description.age)} ${description.job}`;
+}
+
+function ageToString(age: AgeDto): string {
+  return `Age: in Years:${age.timeInYear} in Days:${age.timeInDay} In hours:${age.timeInHour}`;
 }

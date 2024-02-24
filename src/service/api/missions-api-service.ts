@@ -1,6 +1,6 @@
 import { gql } from "graphql-request/build/cjs";
 import { requestApi } from "./api-service";
-import { MissionDto } from "../dto/mission-dto";
+import { MissionDto } from "../../dto/mission-dto";
 
 export async function getMissions(): Promise<MissionDto[]> {
   const missionsQuery = gql`

@@ -1,6 +1,6 @@
 import { gql } from "graphql-request/build/cjs";
 import { requestApi } from "./api-service";
-import { ProjectDto } from "../dto/project-dto";
+import { ProjectDto } from "../../dto/project-dto";
 
 export async function getProjects(): Promise<ProjectDto[]> {
   const projectsQuery = gql`

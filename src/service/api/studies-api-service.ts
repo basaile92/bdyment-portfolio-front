@@ -1,4 +1,4 @@
-import { StudyDto } from "../dto/study-dto";
+import { StudyDto } from "../../dto/study-dto";
 import { gql } from "graphql-request/build/cjs";
 import { requestApi } from "./api-service";
 

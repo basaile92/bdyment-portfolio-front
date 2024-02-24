@@ -1,10 +1,10 @@
 export interface DescriptionDto {
   name: string;
-  age: Age;
+  age: AgeDto;
   job: string;
 }
 
-interface Age {
+export interface AgeDto {
   timeInHour: number;
   timeInDay: number;
   timeInYear: number;
