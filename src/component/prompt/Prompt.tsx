@@ -76,6 +76,7 @@ function Prompt(props: any) {
         .finally(() => {
           setIdArrowPicker(length + 1);
           setCommandLine("");
+          window.scrollTo(0, document.body.offsetHeight);
         });
     }
   };

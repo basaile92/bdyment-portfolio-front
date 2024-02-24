@@ -12,9 +12,9 @@ function Console() {
     setHistory([...history, historyLine]);
   };
   return (
-    <div>
+    <div className="void">
       <Bar />
-      <label>
+      <label className="selection-area-console">
         <div className="console">
           {history.map((historyLine) => (
             <div key={historyLine.date}>
