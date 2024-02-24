@@ -4,27 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
-      <change afterPath="$PROJECT_DIR$/src/service/api/companies-api-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/api/description-api-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/command-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/console-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/keyboard-utils.ts" afterDir="false" />
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="- Modify api services&#10;- Add keyboard utils&#10;- Create description service and companies service&#10;- Modify console to make it accept the command and display response.">
+      <change afterPath="$PROJECT_DIR$/src/service/command/help-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/command/hobbies-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/command/languages-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/command/missions-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/command/projects-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/command/skills-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/command/studies-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/type-utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/console/Console.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/console/Console.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/description-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/description-dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/history-line.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/history-line.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/api-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/companies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/companies-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/description-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/description-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/help-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/help-api-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/hobbies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/hobbies-api-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/languages-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/languages-api-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/missions-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/missions-api-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/projects-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/projects-api-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/skills-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/skills-api-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/studies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/studies-api-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/command-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/command-dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/api/companies-api-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/companies-api-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/api/help-api-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/help-api-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/api/hobbies-api-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/hobbies-api-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/api/languages-api-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/languages-api-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/api/missions-api-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/missions-api-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/api/projects-api-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/projects-api-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/api/skills-api-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/skills-api-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/api/studies-api-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/studies-api-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/companies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/companies-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/description-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/description-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/basaile92/IdeaProjects/bdyment-portfolio-front/src/service",
+    "last_opened_file_path": "/Users/basaile92/IdeaProjects/bdyment-portfolio-front/src/service/command",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,9 +79,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/service/command" />
       <recent name="$PROJECT_DIR$/src/service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/service" />
+      <recent name="$PROJECT_DIR$/src/service/command" />
       <recent name="$PROJECT_DIR$/src/service/api" />
     </key>
   </component>
@@ -110,7 +115,7 @@
       <workItem from="1708284595108" duration="43000" />
       <workItem from="1708532173402" duration="14506000" />
       <workItem from="1708619231566" duration="2726000" />
-      <workItem from="1708636442848" duration="16573000" />
+      <workItem from="1708636442848" duration="27373000" />
     </task>
     <task id="LOCAL-00001" summary="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
       <option name="closed" value="true" />
@@ -120,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708621471274</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Modify api services&#10;- Add keyboard utils&#10;- Create description service and companies service&#10;- Modify console to make it accept the command and display response.">
+      <option name="closed" value="true" />
+      <created>1708764791126</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708764791126</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +142,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Launchable react app&#10;- Create components:&#10; - Bar: title bar&#10; - Console: entire console app&#10; - Command: historical command launched by the user&#10; - Prompt: user's area to launch its command&#10; - Name: name of the user in command and prompt&#10; - Response: the computer response to user command&#10;- Add css for all the created components&#10;- Add UbuntuMono police" />
     <MESSAGE value="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier" />
+    <MESSAGE value="- Modify api services&#10;- Add keyboard utils&#10;- Create description service and companies service&#10;- Modify console to make it accept the command and display response." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Modify api services&#10;- Add keyboard utils&#10;- Create description service and companies service&#10;- Modify console to make it accept the command and display response." />
   </component>
 </project>

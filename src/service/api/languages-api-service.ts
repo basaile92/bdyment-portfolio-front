@@ -1,4 +1,4 @@
-import { gql } from "graphql-request/build/cjs";
+import { gql } from "graphql-request";
 import { requestApi } from "./api-service";
 import { LanguageDto } from "../../dto/language-dto";
 

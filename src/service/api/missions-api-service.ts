@@ -1,4 +1,4 @@
-import { gql } from "graphql-request/build/cjs";
+import { gql } from "graphql-request";
 import { requestApi } from "./api-service";
 import { MissionDto } from "../../dto/mission-dto";
 
@@ -45,7 +45,8 @@ export async function getMissionsBySkill(
       }
     }
   `;
-  return (await requestApi(missionsQuery, skillName))["missionsBySkill"];
+  const variables = { skillName: skillName };
+  return (await requestApi(missionsQuery, variables))["missionsBySkill"];
 }
 
 export async function getMissionsByYear(year: number): Promise<MissionDto[]> {
@@ -67,5 +68,6 @@ export async function getMissionsByYear(year: number): Promise<MissionDto[]> {
       }
     }
   `;
-  return (await requestApi(missionsQuery, year))["missionsByYear"];
+  const variables = { year: year };
+  return (await requestApi(missionsQuery, variables))["missionsByYear"];
 }

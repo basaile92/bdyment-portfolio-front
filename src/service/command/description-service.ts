@@ -1,10 +1,11 @@
-import { getDescription } from "./api/description-api-service";
-import { AgeDto, DescriptionDto } from "../dto/description-dto";
+import { getDescription } from "../api/description-api-service";
+import { AgeDto, DescriptionDto } from "../../dto/description-dto";
 
 export async function description(parameter: string): Promise<string> {
   if (!parameter) {
     return descriptionToString(await getDescription());
   }
+  // TODO: Error
   return "";
 }
 

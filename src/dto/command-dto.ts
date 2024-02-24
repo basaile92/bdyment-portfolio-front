@@ -1,9 +1,9 @@
 export interface CommandDto {
   command: string;
-  usages: Usage[];
+  usages: UsageDto[];
 }
 
-interface Usage {
+export interface UsageDto {
   parameter: string;
   description: string;
 }

@@ -1,5 +1,5 @@
 import { SkillDto } from "../../dto/skill-dto";
-import { gql } from "graphql-request/build/cjs";
+import { gql } from "graphql-request";
 import { requestApi } from "./api-service";
 
 export async function getSkills(): Promise<SkillDto[]> {
@@ -25,5 +25,6 @@ export async function getSkillsByCategory(
       }
     }
   `;
-  return (await requestApi(skillsQuery, category))["skillsByCategory"];
+  const variables = { category: category };
+  return (await requestApi(skillsQuery, variables))["skillsByCategory"];
 }

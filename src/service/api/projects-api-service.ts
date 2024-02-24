@@ -1,4 +1,4 @@
-import { gql } from "graphql-request/build/cjs";
+import { gql } from "graphql-request";
 import { requestApi } from "./api-service";
 import { ProjectDto } from "../../dto/project-dto";
 
@@ -43,7 +43,8 @@ export async function getProjectsBySkill(
       }
     }
   `;
-  return (await requestApi(projectsQuery, skillName))["projectsBySkill"];
+  const variables = { skillName: skillName };
+  return (await requestApi(projectsQuery, variables))["projectsBySkill"];
 }
 
 export async function getProjectsByYear(year: number): Promise<ProjectDto[]> {
@@ -64,5 +65,6 @@ export async function getProjectsByYear(year: number): Promise<ProjectDto[]> {
       }
     }
   `;
-  return (await requestApi(projectsQuery, year))["projectsByYear"];
+  const variables = { year: year };
+  return (await requestApi(projectsQuery, variables))["projectsByYear"];
 }

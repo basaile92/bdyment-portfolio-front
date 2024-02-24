@@ -1,9 +1,9 @@
-import { gql } from "graphql-request/build/cjs";
 import { requestApi } from "./api-service";
+import { gql } from "graphql-request";
 
 export async function getHobbies(): Promise<string[]> {
   const hobbyQuery = gql`
-    query Query {
+    query hobbies {
       hobbies
     }
   `;

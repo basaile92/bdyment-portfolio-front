@@ -19,17 +19,20 @@ export async function getHelp(): Promise<CommandDto[]> {
   return (await requestApi(helpQuery))["help"];
 }
 
-export async function getHelpByCommands(command: string): Promise<CommandDto> {
+export async function getHelpByCommands(
+  commandLabel: string,
+): Promise<CommandDto> {
   const helpQuery = gql`
     query helpByCommand($commandLabel: String!) {
       helpByCommand(commandLabel: $commandLabel) {
         command
         usages {
-          description
           parameter
+          description
         }
       }
     }
   `;
-  return (await requestApi(helpQuery, command))["helpByCommand"];
+  const variables = { commandLabel: commandLabel };
+  return (await requestApi(helpQuery, variables))["helpByCommand"];
 }

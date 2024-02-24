@@ -1,5 +1,5 @@
 import { StudyDto } from "../../dto/study-dto";
-import { gql } from "graphql-request/build/cjs";
+import { gql } from "graphql-request";
 import { requestApi } from "./api-service";
 
 export async function getStudies(): Promise<StudyDto[]> {
@@ -35,5 +35,6 @@ export async function getStudiesByYear(year: number): Promise<StudyDto[]> {
       }
     }
   `;
-  return (await requestApi(studiesQuery, year))["studies"];
+  const variables = { year: year };
+  return (await requestApi(studiesQuery, variables))["studiesByYear"];
 }

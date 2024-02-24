@@ -22,7 +22,7 @@ export async function getCompanies(): Promise<CompanyDto[]> {
 
 export async function getCompaniesByYear(year: number): Promise<CompanyDto[]> {
   const companyQuery = gql`
-    query companies($year: Int!) {
+    query companiesByYear($year: Int!) {
       companiesByYear(year: $year) {
         name
         website
@@ -35,5 +35,6 @@ export async function getCompaniesByYear(year: number): Promise<CompanyDto[]> {
       }
     }
   `;
-  return (await requestApi(companyQuery, year))["companies"];
+  const variables = { year: year };
+  return (await requestApi(companyQuery, variables))["companiesByYear"];
 }
