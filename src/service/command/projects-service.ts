@@ -36,7 +36,7 @@ function projectToString(project: ProjectDto): string {
           </div>
           ${displayValueIfPresent(
             project.website,
-            `<a class="website" href="${project.website}">
+            `<a class="website" target="_blank" href="${project.website}">
             ${project.website}
           </a>`,
           )}

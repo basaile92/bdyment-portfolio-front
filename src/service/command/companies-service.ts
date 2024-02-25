@@ -29,7 +29,7 @@ function companyToString(company: CompanyDto): string {
           </div>
           ${displayValueIfPresent(
             company.website,
-            `<a class="website" href="${company.website}">
+            `<a class="website" target="_blank" href="${company.website}">
             ${company.website}
           </a>`,
           )}

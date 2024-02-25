@@ -37,7 +37,6 @@ function Console() {
           clearHistory={clearHistory}
         ></Prompt>
       </div>
-      <label htmlFor="prompt" className="selection-area-console"></label>
     </div>
   );
 }

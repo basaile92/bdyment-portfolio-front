@@ -36,7 +36,7 @@ function missionToString(mission: MissionDto): string {
           </div>
           ${displayValueIfPresent(
             mission.website,
-            `<a class="website" href="${mission.website}">
+            `<a class="website" target="_blank" href="${mission.website}">
             ${mission.website}
           </a>`,
           )}
