@@ -3,6 +3,8 @@ import { StudyDto } from "../../dto/study-dto";
 import { isInteger } from "../../utils/type-utils";
 import { separateByNewLine } from "../../utils/separation-utils";
 import { displayDatesAndPlace } from "../../utils/value-utils";
+import { help } from "./help-service";
+import { parameterError } from "../error-service";
 
 export async function studies(parameter: string): Promise<string> {
   if (!parameter) {
@@ -13,8 +15,7 @@ export async function studies(parameter: string): Promise<string> {
       .map(studyToString)
       .reduce(separateByNewLine);
   }
-  // TODO: Error
-  return "";
+  return parameterError("studies");
 }
 
 function studyToString(study: StudyDto): string {

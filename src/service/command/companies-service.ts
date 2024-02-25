@@ -6,6 +6,7 @@ import {
   displayDatesAndPlace,
   displayValueIfPresent,
 } from "../../utils/value-utils";
+import { parameterError } from "../error-service";
 
 export async function companies(parameter: string): Promise<string> {
   if (!parameter) {
@@ -18,8 +19,7 @@ export async function companies(parameter: string): Promise<string> {
       .map(companyToString)
       .reduce(separateByNewLine);
   }
-  // TODO: Error
-  return "";
+  return await parameterError("companies");
 }
 
 function companyToString(company: CompanyDto): string {

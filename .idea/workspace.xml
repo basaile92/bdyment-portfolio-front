@@ -4,27 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="- Add scroll to end when EnterDown">
-      <change afterPath="$PROJECT_DIR$/src/utils/separation-utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/value-utils.ts" afterDir="false" />
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="- Add tab functionnality">
+      <change afterPath="$PROJECT_DIR$/src/service/error-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/command/Command.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/command/Command.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/command/Command.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/command/Command.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/console/Console.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/console/Console.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/console/Console.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/console/Console.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/response/Response.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/response/Response.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/command/companies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/companies-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/command/description-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/description-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/help-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/help-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/command/hobbies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/hobbies-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/command/languages-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/languages-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/missions-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/missions-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/projects-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/projects-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/skills-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/skills-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/command/studies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/studies-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/console-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/console-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/tab-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/tab-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +105,7 @@
       <workItem from="1708284595108" duration="43000" />
       <workItem from="1708532173402" duration="14506000" />
       <workItem from="1708619231566" duration="2726000" />
-      <workItem from="1708636442848" duration="40564000" />
+      <workItem from="1708636442848" duration="48205000" />
     </task>
     <task id="LOCAL-00001" summary="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
       <option name="closed" value="true" />
@@ -147,7 +139,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708782070693</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- Add format in response + add scroll to bottom when enter + add clear function">
+      <option name="closed" value="true" />
+      <created>1708794501082</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708794501082</updated>
+    </task>
+    <task id="LOCAL-00006" summary="- Add tab functionnality">
+      <option name="closed" value="true" />
+      <created>1708866598161</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708866598161</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +167,8 @@
     <MESSAGE value="- Modify api services&#10;- Add keyboard utils&#10;- Create description service and companies service&#10;- Modify console to make it accept the command and display response." />
     <MESSAGE value="- Create help service, hobbies service, languages service, missions service, projects service, skills service, studies service" />
     <MESSAGE value="- Add scroll to end when EnterDown" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Add scroll to end when EnterDown" />
+    <MESSAGE value="- Add format in response + add scroll to bottom when enter + add clear function" />
+    <MESSAGE value="- Add tab functionnality" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Add tab functionnality" />
   </component>
 </project>

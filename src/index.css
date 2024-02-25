@@ -73,15 +73,18 @@ code {
 }
 
 .native {
+  font-weight: bold;
   color: green;
 }
 
 .fluent {
+  font-weight: bold;
   color: yellow;
 }
 
 .beginner {
-  color: red;
+  font-weight: bold;
+  color: #d73c3c;
 }
 
 .subject {
@@ -93,4 +96,8 @@ code {
   color: rgba(61, 134, 203, 0.9);
 }
 
+.error {
+  font-weight: bold;
+  color: red;
+}
 

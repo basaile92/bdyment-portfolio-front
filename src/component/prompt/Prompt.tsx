@@ -122,8 +122,7 @@ function Prompt(props: any) {
               new HistoryLine(
                 new Date(),
                 commandLine,
-                // TODO: use ERROR
-                "The command line is not available because server is down.",
+                `<div class="error">The command line is not available because server is down.</div>`,
               ),
             ),
           )
