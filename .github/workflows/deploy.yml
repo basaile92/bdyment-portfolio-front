@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: "18"
       - name: Build front
-        run: yarn add react-scripts && yarn add react-router-dom && yarn build
+        run: yarn add react-scripts && yarn add react-router-dom && yarn add graphql && yarn build
 
       - name: Create zip file of bdyment-portfolio-front
         run: zip -r bdyment-portfolio-front.zip build
