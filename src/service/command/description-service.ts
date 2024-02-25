@@ -1,6 +1,5 @@
 import { getDescription } from "../api/description-api-service";
 import { AgeDto, DescriptionDto } from "../../dto/description-dto";
-import { help } from "./help-service";
 import { parameterError } from "../error-service";
 
 export async function description(parameter: string): Promise<string> {

@@ -1,7 +1,6 @@
 import { getLanguages } from "../api/languages-api-service";
 import { LanguageDto } from "../../dto/language-dto";
 import { separateByNewLine } from "../../utils/separation-utils";
-import { help } from "./help-service";
 import { parameterError } from "../error-service";
 
 export async function languages(parameter: string): Promise<string> {

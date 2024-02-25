@@ -1,6 +1,5 @@
 import { getHobbies } from "../api/hobbies-api-service";
 import { separateByComma } from "../../utils/separation-utils";
-import { help } from "./help-service";
 import { parameterError } from "../error-service";
 
 export async function hobbies(parameter: string): Promise<string> {
