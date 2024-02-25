@@ -30,3 +30,7 @@ export function commandError(): Promise<string> {
     );
   });
 }
+
+export function serverError(): string {
+  return "<div class='error'>The command line is not available because server is down.</div>";
+}

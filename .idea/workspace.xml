@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Change Favicon and title">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Fix link which were not clickable">
+      <change afterPath="$PROJECT_DIR$/src/service/advise-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/console/Console.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/console/Console.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/console/Console.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/console/Console.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/companies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/companies-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/missions-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/missions-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/projects-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/projects-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/error-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/error-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/tab-service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/keyboard-utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/keyboard-utils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +69,8 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/service" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/service/component-behave" />
       <recent name="$PROJECT_DIR$/src/service/command" />
       <recent name="$PROJECT_DIR$/src/service/api" />
     </key>
@@ -104,7 +102,7 @@
       <workItem from="1708284595108" duration="43000" />
       <workItem from="1708532173402" duration="14506000" />
       <workItem from="1708619231566" duration="2726000" />
-      <workItem from="1708636442848" duration="49344000" />
+      <workItem from="1708636442848" duration="54141000" />
     </task>
     <task id="LOCAL-00001" summary="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
       <option name="closed" value="true" />
@@ -170,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708868667038</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fix link which were not clickable">
+      <option name="closed" value="true" />
+      <created>1708869506694</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708869506694</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +192,7 @@
     <MESSAGE value="- Add tab functionnality" />
     <MESSAGE value="- Add error treatment" />
     <MESSAGE value="Change Favicon and title" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change Favicon and title" />
+    <MESSAGE value="Fix link which were not clickable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix link which were not clickable" />
   </component>
 </project>

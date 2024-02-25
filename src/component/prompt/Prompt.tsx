@@ -1,140 +1,172 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Prompt.css";
 import Name from "../name/Name";
-import submitCommand from "../../service/console-service";
+import HistoryLine from "../../model/history-line";
+import { separateByTab } from "../../utils/separation-utils";
+import Response from "../response/Response";
 import {
   isArrowWithShiftDown,
-  isCtrlCDown,
-  isDownDown,
+  isCtrlCTyped,
+  isDownTyped,
   isEnterDown,
-  isTabDown,
-  isTabShiftDown,
-  isUpDown,
+  isTabShiftTyped,
+  isTabTyped,
+  isUpTyped,
   removeAllBehave,
 } from "../../utils/keyboard-utils";
-import HistoryLine from "../../model/history-line";
 import {
   adviseACommandWhoStartWith,
   adviseCommandsWhoStartWith,
-} from "../../service/tab-service";
-import { separateByTab } from "../../utils/separation-utils";
-import Response from "../response/Response";
+} from "../../service/advise-service";
+import submitCommand from "../../service/console-service";
+import { serverError } from "../../service/error-service";
 
 function Prompt(props: any) {
   let [commandLine, setCommandLine] = useState("");
-  let [indexArrowPicker, setIndexArrowPicker] = useState(0);
-  let [indexTabulationPicker, setIndexTabulationPicker] = useState(0);
-  let [inTabulationMode, setInTabulationMode] = useState(false);
-  let [tabulationModeArray, setTabulationModeArray] = useState<string[]>([]);
-  let [tabulationModeValue, setTabulationModeValue] = useState<string>("");
-  const ref = useRef<HTMLDivElement>(null);
+  let [indexHistoryCommandPicker, setIndexHistoryCommandPicker] = useState(0);
+  let [indexAdvisePicker, setIndexAdvisePicker] = useState(0);
+  let [adviseModeActivated, setAdviseModeActivated] = useState(false);
+  let [adviseArray, setAdviseArray] = useState<string[]>([]);
+  let [valueToAdvise, setValueToAdvise] = useState<string>("");
+  const refToScrollDown = useRef<HTMLDivElement>(null);
   let addHistoryLine = props.addHistoryLine;
   let clearHistory = props.clearHistory;
   let history: HistoryLine[] = props.history;
   useEffect(() => {
-    if (history.length) {
-      ref.current?.scrollIntoView({
-        block: "end",
-      });
+    if (history.length > 0) {
+      scrollDown();
     }
     if (history.length === 0) {
-      setIndexArrowPicker(0);
+      resetHistoryPicker();
     }
   }, [history.length]);
   useEffect(() => {
-    if (!inTabulationMode) {
-      setIndexTabulationPicker(0);
-      setTabulationModeArray([]);
-      setTabulationModeValue("");
+    if (!adviseModeActivated) {
+      resetAdviseMode();
     }
-  }, [inTabulationMode]);
-  let onKeyDown = (e: any) => {
-    if (isArrowWithShiftDown(e)) {
-      removeAllBehave(e);
-    }
-    if (isUpDown(e)) {
-      removeAllBehave(e);
-      let idArrowPickerValue = indexArrowPicker;
-      if (indexArrowPicker > 0) {
-        idArrowPickerValue = idArrowPickerValue - 1;
-        setCommandLine(history[idArrowPickerValue].command);
-      }
-      setIndexArrowPicker(idArrowPickerValue);
-    }
-    if (isDownDown(e)) {
-      removeAllBehave(e);
-      let idArrowPickerValue = indexArrowPicker;
-      if (indexArrowPicker < history.length - 1) {
-        idArrowPickerValue = idArrowPickerValue + 1;
-        setCommandLine(history[idArrowPickerValue].command);
-      }
-      if (indexArrowPicker === history.length - 1) {
-        idArrowPickerValue = idArrowPickerValue + 1;
-        setCommandLine("");
-      }
-      setIndexArrowPicker(idArrowPickerValue);
-    }
-    if (isTabDown(e)) {
-      removeAllBehave(e);
-      if (!inTabulationMode) {
-        setTabulationModeValue(commandLine);
-        const adviseArray = adviseCommandsWhoStartWith(tabulationModeValue);
-        setTabulationModeArray(adviseArray);
-        setInTabulationMode(true);
-      }
-      const newCommandLineValue = adviseACommandWhoStartWith(
-        tabulationModeValue,
-        indexTabulationPicker,
-      );
-      setCommandLine(newCommandLineValue + " ");
-      const indexTabulationNewValue = indexTabulationPicker + 1;
-      setIndexTabulationPicker(indexTabulationNewValue);
-      ref.current?.scrollIntoView({
-        block: "end",
-      });
-    }
-    if (!isTabDown(e)) {
-      setInTabulationMode(false);
-    }
-    if (isTabShiftDown(e)) {
-      removeAllBehave(e);
-    }
-    if (isCtrlCDown(e)) {
-      removeAllBehave(e);
-      const length = history.length;
-      addHistoryLine(new HistoryLine(new Date(), commandLine, undefined));
-      setIndexArrowPicker(length + 1);
-      setCommandLine("");
-    }
-    if (isEnterDown(e)) {
-      removeAllBehave(e);
-      const length = history.length;
-      if (commandLine.split(" ")[0] === "clear") {
-        clearHistory();
-        setCommandLine("");
-      } else
-        submitCommand(commandLine)
-          .then((response) =>
-            addHistoryLine(new HistoryLine(new Date(), commandLine, response)),
-          )
-          .catch(() =>
-            addHistoryLine(
-              new HistoryLine(
-                new Date(),
-                commandLine,
-                `<div class="error">The command line is not available because server is down.</div>`,
-              ),
-            ),
-          )
-          .finally(() => {
-            setIndexArrowPicker(length + 1);
-            setCommandLine("");
-          });
-    }
+  }, [adviseModeActivated]);
+
+  let scrollDown = () => {
+    refToScrollDown.current?.scrollIntoView({
+      block: "end",
+    });
+  };
+
+  let resetAdviseMode = () => {
+    setIndexAdvisePicker(0);
+    setAdviseArray([]);
+    setValueToAdvise("");
+  };
+
+  const resetHistoryPicker = () => {
+    setIndexHistoryCommandPicker(0);
   };
 
   let onChangeCommandLine = (e: any) => {
     setCommandLine(e.target.value);
+  };
+
+  let retrievePreviousCommand = () => {
+    let indexHistoryCommandPickerValue = indexHistoryCommandPicker;
+    if (indexHistoryCommandPicker > 0) {
+      indexHistoryCommandPickerValue = indexHistoryCommandPickerValue - 1;
+      setCommandLine(history[indexHistoryCommandPickerValue].command);
+    }
+    setIndexHistoryCommandPicker(indexHistoryCommandPickerValue);
+  };
+
+  let retrieveNextCommand = () => {
+    let indexHistoryCommandPickerValue = indexHistoryCommandPicker;
+    if (indexHistoryCommandPicker < history.length - 1) {
+      indexHistoryCommandPickerValue = indexHistoryCommandPickerValue + 1;
+      setCommandLine(history[indexHistoryCommandPickerValue].command);
+    }
+    if (indexHistoryCommandPicker === history.length - 1) {
+      indexHistoryCommandPickerValue = indexHistoryCommandPickerValue + 1;
+      setCommandLine("");
+    }
+    setIndexHistoryCommandPicker(indexHistoryCommandPickerValue);
+  };
+
+  let advise = () => {
+    if (!adviseModeActivated) {
+      setValueToAdvise(commandLine);
+      const adviseArray = adviseCommandsWhoStartWith(valueToAdvise);
+      setAdviseArray(adviseArray);
+      setAdviseModeActivated(true);
+    }
+    const newCommandLineValue = adviseACommandWhoStartWith(
+      valueToAdvise,
+      indexAdvisePicker,
+    );
+    setCommandLine(newCommandLineValue + " ");
+    const indexTabulationNewValue = indexAdvisePicker + 1;
+    setIndexAdvisePicker(indexTabulationNewValue);
+    scrollDown();
+  };
+
+  let deactivateAdviseMode = () => {
+    setAdviseModeActivated(false);
+  };
+
+  let giveUp = () => {
+    const length = history.length;
+    addHistoryLine(new HistoryLine(new Date(), commandLine, undefined));
+    setIndexHistoryCommandPicker(length + 1);
+    setCommandLine("");
+  };
+
+  let submit = () => {
+    const length = history.length;
+    if (commandLine.split(" ")[0] === "clear") {
+      clearHistory();
+      setCommandLine("");
+    } else
+      submitCommand(commandLine)
+        .then((response) =>
+          addHistoryLine(new HistoryLine(new Date(), commandLine, response)),
+        )
+        .catch(() =>
+          addHistoryLine(
+            new HistoryLine(new Date(), commandLine, serverError()),
+          ),
+        )
+        .finally(() => {
+          setIndexHistoryCommandPicker(length + 1);
+          setCommandLine("");
+        });
+  };
+
+  let onKeyDown = (e: any) => {
+    if (isArrowWithShiftDown(e)) {
+      removeAllBehave(e);
+    }
+    if (isUpTyped(e)) {
+      removeAllBehave(e);
+      retrievePreviousCommand();
+    }
+    if (isDownTyped(e)) {
+      removeAllBehave(e);
+      retrieveNextCommand();
+    }
+    if (isTabTyped(e)) {
+      removeAllBehave(e);
+      advise();
+    }
+    if (!isTabTyped(e)) {
+      deactivateAdviseMode();
+    }
+    if (isTabShiftTyped(e)) {
+      removeAllBehave(e);
+    }
+    if (isCtrlCTyped(e)) {
+      removeAllBehave(e);
+      giveUp();
+    }
+    if (isEnterDown(e)) {
+      removeAllBehave(e);
+      submit();
+    }
   };
 
   return (
@@ -150,10 +182,10 @@ function Prompt(props: any) {
           onChange={onChangeCommandLine}
         />
       </div>
-      {inTabulationMode && tabulationModeArray.length > 0 && (
-        <Response>{tabulationModeArray.reduce(separateByTab)}</Response>
+      {adviseModeActivated && adviseArray.length > 0 && (
+        <Response>{adviseArray.reduce(separateByTab)}</Response>
       )}
-      <div ref={ref}></div>
+      <div ref={refToScrollDown}></div>
     </div>
   );
 }

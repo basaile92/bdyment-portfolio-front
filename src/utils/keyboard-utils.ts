@@ -9,22 +9,22 @@ export const isArrowWithShiftDown = (e: any) => {
     e.keyCode <= 40
   );
 };
-export const isUpDown = (e: any) => {
+export const isUpTyped = (e: any) => {
   return e.shiftKey === false && e.ctrlKey === false && e.keyCode === 38;
 };
 
-export const isDownDown = (e: any) => {
+export const isDownTyped = (e: any) => {
   return e.shiftKey === false && e.ctrlKey === false && e.keyCode === 40;
 };
 
-export const isTabDown = (e: any) => {
+export const isTabTyped = (e: any) => {
   return e.shiftKey === false && e.ctrlKey === false && e.keyCode === 9;
 };
-export const isTabShiftDown = (e: any) => {
+export const isTabShiftTyped = (e: any) => {
   return e.shiftKey === true && e.ctrlKey === false && e.keyCode === 9;
 };
 
-export const isCtrlCDown = (e: any) => {
+export const isCtrlCTyped = (e: any) => {
   return e.shiftKey === false && e.ctrlKey === true && e.keyCode === 67;
 };
 
