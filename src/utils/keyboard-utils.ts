@@ -27,4 +27,5 @@ export const isTabShiftDown = (e: any) => {
 export const isCtrlCDown = (e: any) => {
   return e.shiftKey === false && e.ctrlKey === true && e.keyCode === 67;
 };
+
 export const removeAllBehave = (e: any) => e.preventDefault();
