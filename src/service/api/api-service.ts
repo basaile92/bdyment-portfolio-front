@@ -1,6 +1,6 @@
 import request, { RequestDocument } from "graphql-request";
 
-const ENDPOINT: string = "http://localhost:3000/graphql";
+const ENDPOINT: string = "http://bdyment.com/api/graphql";
 
 export function requestApi(
   query: RequestDocument,
