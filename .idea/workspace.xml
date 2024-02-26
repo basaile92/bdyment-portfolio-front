@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Fix icons">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/bar/Bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/bar/Bar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +115,7 @@
       <workItem from="1708619231566" duration="2726000" />
       <workItem from="1708636442848" duration="55909000" />
       <workItem from="1708893557609" duration="28000" />
-      <workItem from="1708949306864" duration="18927000" />
+      <workItem from="1708949306864" duration="19621000" />
     </task>
     <task id="LOCAL-00001" summary="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
       <option name="closed" value="true" />
@@ -308,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708987279632</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Fix icons">
+      <option name="closed" value="true" />
+      <created>1708987683507</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1708987683507</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
