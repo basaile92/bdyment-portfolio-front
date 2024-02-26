@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Fix autocapitalize and autocomplete, fix icons">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Fix icons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/bar/Bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/bar/Bar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +115,7 @@
       <workItem from="1708619231566" duration="2726000" />
       <workItem from="1708636442848" duration="55909000" />
       <workItem from="1708893557609" duration="28000" />
-      <workItem from="1708949306864" duration="17414000" />
+      <workItem from="1708949306864" duration="18112000" />
     </task>
     <task id="LOCAL-00001" summary="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
       <option name="closed" value="true" />
@@ -286,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708984010164</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fix icons">
+      <option name="closed" value="true" />
+      <created>1708984906743</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1708984906743</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +320,7 @@
     <MESSAGE value="Add google search" />
     <MESSAGE value="Fix mobile version" />
     <MESSAGE value="Fix autocapitalize and autocomplete, fix icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix autocapitalize and autocomplete, fix icons" />
+    <MESSAGE value="Fix icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix icons" />
   </component>
 </project>
