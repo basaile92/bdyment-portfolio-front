@@ -177,6 +177,8 @@ function Prompt(props: any) {
         <textarea
           id={"prompt"}
           className="prompt"
+          autoCapitalize="none"
+          autoComplete="off"
           rows={1}
           onKeyDown={onKeyDown}
           value={commandLine}
