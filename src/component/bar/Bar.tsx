@@ -20,6 +20,10 @@ function Bar(props: any) {
         <button className="button" onClick={downloadCV}>
           <svg
             className="icon"
+            version="1.1"
+            xmlSpace="preserve"
+            id="svg2349"
+            xmlnsXlink="http://www.inkscape.org/namespaces/inkscape"
             xmlns="http://www.w3.org/2000/svg"
             height="144"
             viewBox="0 -960 960 960"
@@ -31,6 +35,10 @@ function Bar(props: any) {
         <button className="button" onClick={showHelp}>
           <svg
             className="icon"
+            version="1.1"
+            xmlSpace="preserve"
+            id="svg2349"
+            xmlnsXlink="http://www.inkscape.org/namespaces/inkscape"
             xmlns="http://www.w3.org/2000/svg"
             height="144"
             viewBox="0 -960 960 960"

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Fix icons">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Fix icon size">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/bar/Bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/bar/Bar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/bar/Bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/bar/Bar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +115,7 @@
       <workItem from="1708619231566" duration="2726000" />
       <workItem from="1708636442848" duration="55909000" />
       <workItem from="1708893557609" duration="28000" />
-      <workItem from="1708949306864" duration="19621000" />
+      <workItem from="1708949306864" duration="20605000" />
     </task>
     <task id="LOCAL-00001" summary="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
       <option name="closed" value="true" />
@@ -317,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708987683507</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Fix icon size">
+      <option name="closed" value="true" />
+      <created>1708988380637</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1708988380637</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,6 +353,7 @@
     <MESSAGE value="Fix mobile version" />
     <MESSAGE value="Fix autocapitalize and autocomplete, fix icons" />
     <MESSAGE value="Fix icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix icons" />
+    <MESSAGE value="Fix icon size" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix icon size" />
   </component>
 </project>
