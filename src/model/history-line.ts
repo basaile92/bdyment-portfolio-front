@@ -3,8 +3,8 @@ export default class HistoryLine {
   private _command: string;
   private _response: string | undefined;
 
-  constructor(date: Date, command: string, response: string | undefined) {
-    this._date = date.toISOString();
+  constructor(command: string, response: string | undefined) {
+    this._date = new Date().toISOString();
     this._command = command;
     this._response = response;
   }

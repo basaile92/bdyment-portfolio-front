@@ -22,6 +22,7 @@ import submitCommand from "../../service/console-service";
 import { serverError } from "../../service/error-service";
 
 function Prompt(props: any) {
+  let [isLoading, setIsLoading] = useState(false);
   let [commandLine, setCommandLine] = useState("");
   let [indexHistoryCommandPicker, setIndexHistoryCommandPicker] = useState(0);
   let [indexAdvisePicker, setIndexAdvisePicker] = useState(0);
@@ -111,12 +112,13 @@ function Prompt(props: any) {
 
   let giveUp = () => {
     const length = history.length;
-    addHistoryLine(new HistoryLine(new Date(), commandLine, undefined));
+    addHistoryLine(new HistoryLine(commandLine, undefined));
     setIndexHistoryCommandPicker(length + 1);
     setCommandLine("");
   };
 
   let submit = () => {
+    setIsLoading(true);
     const length = history.length;
     if (commandLine.split(" ")[0] === "clear") {
       clearHistory();
@@ -124,16 +126,15 @@ function Prompt(props: any) {
     } else
       submitCommand(commandLine)
         .then((response) =>
-          addHistoryLine(new HistoryLine(new Date(), commandLine, response)),
+          addHistoryLine(new HistoryLine(commandLine, response)),
         )
         .catch(() =>
-          addHistoryLine(
-            new HistoryLine(new Date(), commandLine, serverError()),
-          ),
+          addHistoryLine(new HistoryLine(commandLine, serverError())),
         )
         .finally(() => {
           setIndexHistoryCommandPicker(length + 1);
           setCommandLine("");
+          setIsLoading(false);
         });
   };
 
@@ -180,6 +181,7 @@ function Prompt(props: any) {
           onKeyDown={onKeyDown}
           value={commandLine}
           onChange={onChangeCommandLine}
+          disabled={isLoading}
         />
       </div>
       {adviseModeActivated && adviseArray.length > 0 && (

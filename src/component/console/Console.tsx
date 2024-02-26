@@ -5,9 +5,11 @@ import Response from "../response/Response";
 import Prompt from "../prompt/Prompt";
 import Bar from "../bar/Bar";
 import HistoryLine from "../../model/history-line";
+import Help from "../help/Help";
 
 function Console() {
   const [history, setHistory] = useState<HistoryLine[]>([]);
+  const [helpDisplayed, setHelpDisplayed] = useState(false);
   const addHistoryLine = (historyLine: HistoryLine) => {
     setHistory([...history, historyLine]);
   };
@@ -16,7 +18,9 @@ function Console() {
   };
   return (
     <div>
-      <Bar />
+      <Help helpDisplayed={helpDisplayed} setHelpDisplayed={setHelpDisplayed} />
+      <Bar helpDisplayed={helpDisplayed} setHelpDisplayed={setHelpDisplayed} />
+      <br />
       <div className="console">
         {history.map((historyLine) => (
           <div key={historyLine.date}>
