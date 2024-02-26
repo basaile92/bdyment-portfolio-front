@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Change url">
-      <change afterPath="$PROJECT_DIR$/src/component/help/Help.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/help/Help.tsx" afterDir="false" />
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Add button help and download cv">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/bar/Bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/bar/Bar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/bar/Bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/bar/Bar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/console/Console.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/console/Console.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/console/Console.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/console/Console.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/history-line.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/history-line.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +115,7 @@
       <workItem from="1708619231566" duration="2726000" />
       <workItem from="1708636442848" duration="55909000" />
       <workItem from="1708893557609" duration="28000" />
-      <workItem from="1708949306864" duration="12144000" />
+      <workItem from="1708949306864" duration="13358000" />
     </task>
     <task id="LOCAL-00001" summary="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
       <option name="closed" value="true" />
@@ -245,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708955798782</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add button help and download cv">
+      <option name="closed" value="true" />
+      <created>1708971731050</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708971731050</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +267,7 @@
     <MESSAGE value="Fix build graphql" />
     <MESSAGE value="Fix build by removing not used import + mount nodejs ci version to 20" />
     <MESSAGE value="Change url" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change url" />
+    <MESSAGE value="Add button help and download cv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add button help and download cv" />
   </component>
 </project>
