@@ -1,7 +1,7 @@
 import React from "react";
 import "./Bar.css";
-import help from "./icon/help.png";
-import download from "./icon/download.png";
+import help from "../../../public/icon/help.png";
+import download from "../../../public/icon/download.png";
 
 function Bar(props: any) {
   let downloadCV = () => {
