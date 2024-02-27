@@ -1,7 +1,7 @@
 import React from "react";
 import "./Bar.css";
-import help from "../../icon/help.png";
-import download from "../../icon/download.png";
+import help from "./icon/help.png";
+import download from "./icon/download.png";
 
 function Bar(props: any) {
   let downloadCV = () => {
@@ -20,10 +20,10 @@ function Bar(props: any) {
       <div className="title-content">basile dyment</div>
       <div className="button-container">
         <button className="button" onClick={downloadCV}>
-          <img className="icon" src={download} alt="Download CV" />
+          <img className="icon" src={download} />
         </button>
         <button className="button" onClick={showHelp}>
-          <img className="icon" src={help} alt="Show help" />
+          <img className="icon" src={help} />
         </button>
       </div>
     </div>
