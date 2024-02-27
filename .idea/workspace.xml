@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Replace svg icon by png">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Replace buttons by div">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/bar/Bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/bar/Bar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/bar/Bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/bar/Bar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/download.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/help/Help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/help/Help.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +117,7 @@
       <workItem from="1708619231566" duration="2726000" />
       <workItem from="1708636442848" duration="55909000" />
       <workItem from="1708893557609" duration="28000" />
-      <workItem from="1708949306864" duration="25702000" />
+      <workItem from="1708949306864" duration="26491000" />
     </task>
     <task id="LOCAL-00001" summary="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
       <option name="closed" value="true" />
@@ -386,7 +383,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708993219603</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Replace buttons by div">
+      <option name="closed" value="true" />
+      <created>1709023679770</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1709023679770</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Replace buttons by div">
+      <option name="closed" value="true" />
+      <created>1709023821893</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1709023821893</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,6 +441,7 @@
     <MESSAGE value="Fix icon size" />
     <MESSAGE value="Fix svg icon size on iphone" />
     <MESSAGE value="Replace svg icon by png" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace svg icon by png" />
+    <MESSAGE value="Replace buttons by div" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replace buttons by div" />
   </component>
 </project>
