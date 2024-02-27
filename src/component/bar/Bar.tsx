@@ -20,10 +20,10 @@ function Bar(props: any) {
       <div className="title-content">basile dyment</div>
       <div className="button-container">
         <button className="button" onClick={downloadCV}>
-          <img className="icon" src={download} />
+          <img className="icon" src={download} alt="" />
         </button>
         <button className="button" onClick={showHelp}>
-          <img className="icon" src={help} />
+          <img className="icon" src={help} alt="" />
         </button>
       </div>
     </div>
