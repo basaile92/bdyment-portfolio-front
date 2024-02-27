@@ -4,9 +4,11 @@ import { parameterError } from "../error-service";
 
 export async function hobbies(parameter: string): Promise<string> {
   if (!parameter) {
-    return (await getHobbies())
-      .map(hobbiesToString)
-      .reduce(separateByComma, "");
+    const hobbies = await getHobbies();
+    if (hobbies.length === 0) {
+      return "";
+    }
+    return hobbies.map(hobbiesToString).reduce(separateByComma);
   }
   return parameterError("hobbies");
 }

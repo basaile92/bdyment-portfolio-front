@@ -1,7 +1,7 @@
 .help-container {
   display: grid;
   grid-template-columns: 1fr;
-  position: absolute;
+  position: fixed;
   background: rgba(255, 255, 255, 1);
   z-index: 6;
   top: 2.4em;

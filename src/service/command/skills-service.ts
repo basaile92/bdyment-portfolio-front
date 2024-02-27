@@ -11,9 +11,9 @@ export async function skills(parameter: string): Promise<string> {
       .map(skillsByCategoryToString)
       .reduce(separateByNewLine, "");
   }
-  return (await getSkillsByCategory(parameter))
-    .map((skill) => skill.name)
-    .reduce(separateByComma, "");
+  const skillsByCategory = await getSkillsByCategory(parameter);
+  if (skillsByCategory.length === 0) return "";
+  return skillsByCategory.map((skill) => skill.name).reduce(separateByComma);
 }
 
 function groupByCategory(array: SkillDto[]): Map<string, string[]> {
@@ -28,7 +28,7 @@ function groupByCategory(array: SkillDto[]): Map<string, string[]> {
 
 function skillsByCategoryToString(skillsByCategory: [string, string[]]) {
   return `<div><div class="subject">${skillsByCategory[0]}:</div>
-               <div>${skillsByCategory[1].map(skillToString).reduce(separateByComma, "")}</div></div>`;
+               <div>${skillsByCategory[1].map(skillToString).reduce(separateByComma)}</div></div>`;
 }
 
 function skillToString(skill: string): string {

@@ -30,6 +30,7 @@ function Prompt(props: any) {
   let [adviseArray, setAdviseArray] = useState<string[]>([]);
   let [valueToAdvise, setValueToAdvise] = useState<string>("");
   const refToScrollDown = useRef<HTMLDivElement>(null);
+  const textAreaRef = useRef<HTMLTextAreaElement>(null);
   let addHistoryLine = props.addHistoryLine;
   let clearHistory = props.clearHistory;
   let history: HistoryLine[] = props.history;
@@ -46,7 +47,9 @@ function Prompt(props: any) {
       resetAdviseMode();
     }
   }, [adviseModeActivated]);
-
+  useEffect(() => {
+    textAreaRef.current!.focus();
+  }, [isLoading]);
   let scrollDown = () => {
     refToScrollDown.current?.scrollIntoView({
       block: "end",
@@ -184,6 +187,7 @@ function Prompt(props: any) {
           value={commandLine}
           onChange={onChangeCommandLine}
           disabled={isLoading}
+          ref={textAreaRef}
         />
       </div>
       {adviseModeActivated && adviseArray.length > 0 && (
