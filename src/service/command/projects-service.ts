@@ -10,10 +10,7 @@ import {
   separateByComma,
   separateByNewLine,
 } from "../../utils/separation-utils";
-import {
-  displayDatesAndPlace,
-  displayValueIfPresent,
-} from "../../utils/value-utils";
+import { displayDatesAndPlace } from "../../utils/value-utils";
 
 export async function projects(parameter: string): Promise<string> {
   if (!parameter) {
