@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Add initial value to reduce and reformat code with prettier">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Fix reduce with comma and textarea focus and help fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/help/Help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/help/Help.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/hobbies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/hobbies-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/mission-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/mission-dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/project-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/project-dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/command/missions-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/missions-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/command/projects-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/projects-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/skills-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/skills-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,27 +53,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/basaile92/IdeaProjects/bdyment-portfolio-front/src/icon",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.start.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "/Users/basaile92/IdeaProjects/bdyment-portfolio-front/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/basaile92/IdeaProjects/bdyment-portfolio-front/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/basaile92/IdeaProjects/bdyment-portfolio-front/src/icon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/basaile92/IdeaProjects/bdyment-portfolio-front/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/basaile92/IdeaProjects/bdyment-portfolio-front/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/icon" />
@@ -122,7 +119,8 @@
       <workItem from="1708619231566" duration="2726000" />
       <workItem from="1708636442848" duration="55909000" />
       <workItem from="1708893557609" duration="28000" />
-      <workItem from="1708949306864" duration="29441000" />
+      <workItem from="1708949306864" duration="30194000" />
+      <workItem from="1709042745203" duration="593000" />
     </task>
     <task id="LOCAL-00001" summary="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
       <option name="closed" value="true" />
@@ -420,7 +418,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709029861691</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Fix reduce with comma and textarea focus and help fixed">
+      <option name="closed" value="true" />
+      <created>1709033817347</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1709033817347</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +444,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Modify api services&#10;- Add keyboard utils&#10;- Create description service and companies service&#10;- Modify console to make it accept the command and display response." />
     <MESSAGE value="- Create help service, hobbies service, languages service, missions service, projects service, skills service, studies service" />
     <MESSAGE value="- Add scroll to end when EnterDown" />
     <MESSAGE value="- Add format in response + add scroll to bottom when enter + add clear function" />
@@ -463,6 +468,7 @@
     <MESSAGE value="Replace buttons by div" />
     <MESSAGE value="Center button icons and fix help position" />
     <MESSAGE value="Add initial value to reduce and reformat code with prettier" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial value to reduce and reformat code with prettier" />
+    <MESSAGE value="Fix reduce with comma and textarea focus and help fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix reduce with comma and textarea focus and help fixed" />
   </component>
 </project>

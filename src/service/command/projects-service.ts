@@ -36,13 +36,21 @@ function projectToString(project: ProjectDto): string {
             <span class="title">${project.name}</span>
             <span class="subject">${project.role}</span>
           </div>
-          ${displayValueIfPresent(
-            project.website,
-            `<a class="website" target="_blank" href="${project.website}">
-            ${project.website}
+          <div>
+          ${
+            project.websites && project.websites.length > 0
+              ? project.websites
+                  .map(
+                    (
+                      website,
+                    ) => `<a class="website" target="_blank" href="${website}">
+            ${website}
           </a>`,
-          )}
-
+                  )
+                  .reduce(separateByComma)
+              : ""
+          }
+          </div>
           ${displayDatesAndPlace(project.startYear, project.endYear, project.isCurrent)}
           <br/><div> ${project.description} </div>
           <br/>

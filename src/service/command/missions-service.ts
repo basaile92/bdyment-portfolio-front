@@ -36,12 +36,21 @@ function missionToString(mission: MissionDto): string {
             <span class="title">${mission.company}</span>
             <span class="subject">${mission.role}</span>
           </div>
-          ${displayValueIfPresent(
-            mission.website,
-            `<a class="website" target="_blank" href="${mission.website}">
-            ${mission.website}
+          <div>
+          ${
+            mission.websites && mission.websites.length > 0
+              ? mission.websites
+                  .map(
+                    (
+                      website,
+                    ) => `<a class="website" target="_blank" href="${website}">
+            ${website}
           </a>`,
-          )}
+                  )
+                  .reduce(separateByComma)
+              : ""
+          }
+          </div>
           ${displayDatesAndPlace(mission.startYear, mission.endYear, mission.isCurrent, mission.place)}
           <br/><div> ${mission.description} </div>
           <br/>
