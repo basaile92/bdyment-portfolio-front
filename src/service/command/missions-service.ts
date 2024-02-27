@@ -44,7 +44,7 @@ function missionToString(mission: MissionDto): string {
             ${website}
           </a>`,
                   )
-                  .reduce(separateByComma)
+                  .reduce(separateByNewLine)
               : ""
           }
           </div>

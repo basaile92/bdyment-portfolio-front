@@ -44,7 +44,7 @@ function projectToString(project: ProjectDto): string {
             ${website}
           </a>`,
                   )
-                  .reduce(separateByComma)
+                  .reduce(separateByNewLine)
               : ""
           }
           </div>
