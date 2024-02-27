@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Replace buttons by div">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Center button icons and fix help position">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/bar/Bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/bar/Bar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/help/Help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/help/Help.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/companies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/companies-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/help-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/help-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/hobbies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/hobbies-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/languages-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/languages-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/missions-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/missions-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/projects-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/projects-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/skills-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/skills-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/studies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/studies-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +124,7 @@
       <workItem from="1708619231566" duration="2726000" />
       <workItem from="1708636442848" duration="55909000" />
       <workItem from="1708893557609" duration="28000" />
-      <workItem from="1708949306864" duration="26491000" />
+      <workItem from="1708949306864" duration="27600000" />
     </task>
     <task id="LOCAL-00001" summary="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
       <option name="closed" value="true" />
@@ -399,7 +406,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709023821893</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Center button icons and fix help position">
+      <option name="closed" value="true" />
+      <created>1709024497645</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1709024497645</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +432,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Launchable react app&#10;- Create components:&#10; - Bar: title bar&#10; - Console: entire console app&#10; - Command: historical command launched by the user&#10; - Prompt: user's area to launch its command&#10; - Name: name of the user in command and prompt&#10; - Response: the computer response to user command&#10;- Add css for all the created components&#10;- Add UbuntuMono police" />
     <MESSAGE value="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier" />
     <MESSAGE value="- Modify api services&#10;- Add keyboard utils&#10;- Create description service and companies service&#10;- Modify console to make it accept the command and display response." />
     <MESSAGE value="- Create help service, hobbies service, languages service, missions service, projects service, skills service, studies service" />
@@ -442,6 +456,7 @@
     <MESSAGE value="Fix svg icon size on iphone" />
     <MESSAGE value="Replace svg icon by png" />
     <MESSAGE value="Replace buttons by div" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace buttons by div" />
+    <MESSAGE value="Center button icons and fix help position" />
+    <option name="LAST_COMMIT_MESSAGE" value="Center button icons and fix help position" />
   </component>
 </project>

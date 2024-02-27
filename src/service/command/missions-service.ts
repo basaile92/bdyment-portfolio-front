@@ -17,16 +17,18 @@ import {
 
 export async function missions(parameter: string): Promise<string> {
   if (!parameter) {
-    return (await getMissions()).map(missionToString).reduce(separateByNewLine);
+    return (await getMissions())
+      .map(missionToString)
+      .reduce(separateByNewLine, "");
   }
   if (isInteger(parameter)) {
     return (await getMissionsByYear(Number.parseInt(parameter)))
       .map(missionToString)
-      .reduce(separateByNewLine);
+      .reduce(separateByNewLine, "");
   }
   return (await getMissionsBySkill(parameter))
     .map(missionToString)
-    .reduce(separateByNewLine);
+    .reduce(separateByNewLine, "");
 }
 
 function missionToString(mission: MissionDto): string {
@@ -43,7 +45,7 @@ function missionToString(mission: MissionDto): string {
           ${displayDatesAndPlace(mission.startYear, mission.endYear, mission.isCurrent, mission.place)}
           <br/><div> ${mission.description} </div>
           <br/>
-           <div class="italic">${mission.skills.map(skillToString).reduce(separateByComma)}</div>
+           <div class="italic">${mission.skills.map(skillToString).reduce(separateByComma, "")}</div>
           </div>`;
 }
 

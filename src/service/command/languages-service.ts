@@ -7,7 +7,7 @@ export async function languages(parameter: string): Promise<string> {
   if (!parameter) {
     return (await getLanguages())
       .map(languageToString)
-      .reduce(separateByNewLine);
+      .reduce(separateByNewLine, "");
   }
   return parameterError("languages");
 }

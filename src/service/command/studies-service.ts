@@ -7,12 +7,14 @@ import { parameterError } from "../error-service";
 
 export async function studies(parameter: string): Promise<string> {
   if (!parameter) {
-    return (await getStudies()).map(studyToString).reduce(separateByNewLine);
+    return (await getStudies())
+      .map(studyToString)
+      .reduce(separateByNewLine, "");
   }
   if (isInteger(parameter)) {
     return (await getStudiesByYear(Number.parseInt(parameter)))
       .map(studyToString)
-      .reduce(separateByNewLine);
+      .reduce(separateByNewLine, "");
   }
   return parameterError("studies");
 }

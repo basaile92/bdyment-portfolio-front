@@ -17,16 +17,18 @@ import {
 
 export async function projects(parameter: string): Promise<string> {
   if (!parameter) {
-    return (await getProjects()).map(projectToString).reduce(separateByNewLine);
+    return (await getProjects())
+      .map(projectToString)
+      .reduce(separateByNewLine, "");
   }
   if (isInteger(parameter)) {
     return (await getProjectsByYear(Number.parseInt(parameter)))
       .map(projectToString)
-      .reduce(separateByNewLine);
+      .reduce(separateByNewLine, "");
   }
   return (await getProjectsBySkill(parameter))
     .map(projectToString)
-    .reduce(separateByNewLine);
+    .reduce(separateByNewLine, "");
 }
 
 function projectToString(project: ProjectDto): string {
@@ -44,7 +46,7 @@ function projectToString(project: ProjectDto): string {
           ${displayDatesAndPlace(project.startYear, project.endYear, project.isCurrent)}
           <br/><div> ${project.description} </div>
           <br/>
-           <div class="italic">${project.skills.map(skillToString).reduce(separateByComma)}</div>
+           <div class="italic">${project.skills.map(skillToString).reduce(separateByComma, "")}</div>
           </div>`;
 }
 

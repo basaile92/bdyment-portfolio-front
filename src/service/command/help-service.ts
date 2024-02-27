@@ -5,13 +5,13 @@ import { showBetterParameter } from "../../utils/value-utils";
 
 export async function help(parameter: string): Promise<string> {
   if (!parameter) {
-    return (await getHelp()).map(helpToString).reduce(noSeparation);
+    return (await getHelp()).map(helpToString).reduce(noSeparation, "");
   }
   return helpToString(await getHelpByCommands(parameter));
 }
 
 function helpToString(command: CommandDto): string {
-  return `${command.usages.flatMap((usage) => usageToString(command.command, usage)).reduce(noSeparation)}`;
+  return `${command.usages.flatMap((usage) => usageToString(command.command, usage)).reduce(noSeparation, "")}`;
 }
 
 function usageToString(command: string, usage: UsageDto): string {

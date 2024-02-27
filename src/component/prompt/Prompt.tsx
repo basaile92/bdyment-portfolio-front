@@ -187,7 +187,7 @@ function Prompt(props: any) {
         />
       </div>
       {adviseModeActivated && adviseArray.length > 0 && (
-        <Response>{adviseArray.reduce(separateByTab)}</Response>
+        <Response>{adviseArray.reduce(separateByTab, "")}</Response>
       )}
       <div ref={refToScrollDown}></div>
     </div>

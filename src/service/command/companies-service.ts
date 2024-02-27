@@ -12,12 +12,12 @@ export async function companies(parameter: string): Promise<string> {
   if (!parameter) {
     return (await getCompanies())
       .map(companyToString)
-      .reduce(separateByNewLine);
+      .reduce(separateByNewLine, "");
   }
   if (isInteger(parameter)) {
     return (await getCompaniesByYear(Number.parseInt(parameter)))
       .map(companyToString)
-      .reduce(separateByNewLine);
+      .reduce(separateByNewLine, "");
   }
   return await parameterError("companies");
 }
