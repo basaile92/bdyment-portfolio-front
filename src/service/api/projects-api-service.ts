@@ -7,7 +7,7 @@ export async function getProjects(): Promise<ProjectDto[]> {
     query projects {
       projects {
         name
-        website
+        websites
         role
         description
         startYear
@@ -30,7 +30,7 @@ export async function getProjectsBySkill(
     query projectsBySkill($skillName: String!) {
       projectsBySkill(skillName: $skillName) {
         name
-        website
+        websites
         role
         description
         startYear
@@ -52,7 +52,7 @@ export async function getProjectsByYear(year: number): Promise<ProjectDto[]> {
     query projectsByYear($year: Int!) {
       projectsByYear(year: $year) {
         name
-        website
+        websites
         role
         description
         startYear

@@ -7,7 +7,7 @@ export async function getMissions(): Promise<MissionDto[]> {
     query missions {
       missions {
         company
-        website
+        websites
         role
         place
         description
@@ -31,7 +31,7 @@ export async function getMissionsBySkill(
     query missionsBySkill($skillName: String!) {
       missionsBySkill(skillName: $skillName) {
         company
-        website
+        websites
         role
         place
         description
@@ -54,7 +54,7 @@ export async function getMissionsByYear(year: number): Promise<MissionDto[]> {
     query missionsByYear($year: Int!) {
       missionsByYear(year: $year) {
         company
-        website
+        websites
         role
         place
         description
