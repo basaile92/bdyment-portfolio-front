@@ -22,6 +22,6 @@ function certificatesToString(certificate: CertificateDto): string {
             <span class="subject">certification by ${certificate.certifier}</span>
           </div>
           <div class="italic">${certificate.year}</div>
-          <div class="link">${certificate.link}</div>
+          <a class="link" target="_blank" href="${certificate.link}">${certificate.link}</a>
           </div>`;
 }
