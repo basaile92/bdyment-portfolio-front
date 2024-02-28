@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Update package-lock.json">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Remove photo field">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/description-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/description-dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/description-api-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/description-api-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/description-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/description-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/availability-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/availability-dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/availability-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/availability-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -467,7 +466,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709138504606</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Remove photo field">
+      <option name="closed" value="true" />
+      <created>1709139714028</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1709139714028</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +492,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change Favicon and title" />
     <MESSAGE value="Fix link which were not clickable" />
     <MESSAGE value="Refactor Prompt methods to make it more understandable" />
     <MESSAGE value="Add github actions deploy file" />
@@ -510,6 +516,7 @@
     <MESSAGE value="Change format of response of the Availability command" />
     <MESSAGE value="Update" />
     <MESSAGE value="Update package-lock.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update package-lock.json" />
+    <MESSAGE value="Remove photo field" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove photo field" />
   </component>
 </project>

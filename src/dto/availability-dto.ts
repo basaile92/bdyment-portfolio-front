@@ -1,3 +1,3 @@
 export interface AvailabilityDto {
-  date: Date;
+  date: string;
 }
