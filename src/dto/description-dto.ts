@@ -1,5 +1,4 @@
 export interface DescriptionDto {
-  photoInHTML: string;
   name: string;
   age: AgeDto;
   job: string;
