@@ -18,8 +18,8 @@ export async function certificates(parameter: string): Promise<string> {
 
 function certificatesToString(certificate: CertificateDto): string {
   return `<div><div>
-            <span class="title">${certificate.skill} certification </span>
-            <span class="subject">by ${certificate.certifier}</span>
+            <span class="title">${certificate.skill} </span>
+            <span class="subject">certification by ${certificate.certifier}</span>
           </div>
           <div class="italic">${certificate.year}</div>
           <div class="link">${certificate.link}</div>

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Remove photo field">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Remove package-lock.json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/availability-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/availability-dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/availability-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/availability-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/certificates-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/certificates-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
     "npm.start.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/home/bdyment/Documents/prive/bdyment-portfolio-front/node_modules/prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/basaile92/IdeaProjects/bdyment-portfolio-front/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -474,7 +473,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709139714028</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Fix date value">
+      <option name="closed" value="true" />
+      <created>1709140430937</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1709140430937</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Remove package-lock.json">
+      <option name="closed" value="true" />
+      <created>1709140819576</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1709140819576</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,8 +507,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix link which were not clickable" />
-    <MESSAGE value="Refactor Prompt methods to make it more understandable" />
     <MESSAGE value="Add github actions deploy file" />
     <MESSAGE value="Fix build graphql" />
     <MESSAGE value="Fix build by removing not used import + mount nodejs ci version to 20" />
@@ -517,6 +530,8 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Update package-lock.json" />
     <MESSAGE value="Remove photo field" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove photo field" />
+    <MESSAGE value="Fix date value" />
+    <MESSAGE value="Remove package-lock.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove package-lock.json" />
   </component>
 </project>
