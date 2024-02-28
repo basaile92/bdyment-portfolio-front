@@ -7,6 +7,10 @@ import { missions } from "./command/missions-service";
 import { projects } from "./command/projects-service";
 import { skills } from "./command/skills-service";
 import { studies } from "./command/studies-service";
+import { availability } from "./command/availability-service";
+import { certificates } from "./command/certificates-service";
+export const AVAILABILITY_COMMAND = "availability";
+export const CERTIFICATES_COMMAND = "certificates";
 
 export const COMPAGNIES_COMMAND = "companies";
 export const CLEAR_COMMAND = "clear";
@@ -20,6 +24,8 @@ export const SKILLS_COMMAND = "skills";
 export const STUDIES_COMMAND = "studies";
 
 export const AVAILABLE_COMMANDS = [
+  AVAILABILITY_COMMAND,
+  CERTIFICATES_COMMAND,
   COMPAGNIES_COMMAND,
   CLEAR_COMMAND,
   DESCRIPTION_COMMAND,
@@ -32,8 +38,10 @@ export const AVAILABLE_COMMANDS = [
   STUDIES_COMMAND,
 ];
 
-let executionByCommandName: Map<string, (param: string) => Promise<string>> =
+const executionByCommandName: Map<string, (param: string) => Promise<string>> =
   new Map();
+executionByCommandName.set(AVAILABILITY_COMMAND, availability);
+executionByCommandName.set(CERTIFICATES_COMMAND, certificates);
 executionByCommandName.set(COMPAGNIES_COMMAND, companies);
 executionByCommandName.set(DESCRIPTION_COMMAND, description);
 executionByCommandName.set(HOBBIES_COMMAND, hobbies);

@@ -40,7 +40,7 @@ function projectToString(project: ProjectDto): string {
                   .map(
                     (
                       website,
-                    ) => `<a class="website" target="_blank" href="${website}">
+                    ) => `<a class="link" target="_blank" href="${website}">
             ${website}
           </a>`,
                   )

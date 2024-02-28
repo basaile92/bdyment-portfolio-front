@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Add support of multi websites for mission and project">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Add support of new description fields + availability command + certificates command">
+      <change afterPath="$PROJECT_DIR$/src/dto/availability-dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/certificate-dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/api/availability-api-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/api/certificates-api-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/command/availability-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/command/certificates-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bdyment-portfolio-front.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bdyment-portfolio-front.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/description-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/description-dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/api/description-api-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/description-api-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/companies-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/companies-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/description-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/description-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/command/missions-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/missions-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/command/projects-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/projects-service.ts" afterDir="false" />
     </list>
@@ -51,34 +66,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/basaile92/IdeaProjects/bdyment-portfolio-front/src/icon&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/basaile92/IdeaProjects/bdyment-portfolio-front/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/basaile92/IdeaProjects/bdyment-portfolio-front/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/bdyment/Documents/prive/bdyment-portfolio-front/src/service/command",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "/home/bdyment/Documents/prive/bdyment-portfolio-front/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/home/bdyment/Documents/prive/bdyment-portfolio-front/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/service/command" />
+      <recent name="$PROJECT_DIR$/src/service/api" />
+      <recent name="$PROJECT_DIR$/src/dto" />
       <recent name="$PROJECT_DIR$/src/icon" />
       <recent name="$PROJECT_DIR$/.github/workflows" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src/service/command" />
-      <recent name="$PROJECT_DIR$/src/service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -119,6 +135,7 @@
       <workItem from="1708893557609" duration="28000" />
       <workItem from="1708949306864" duration="30194000" />
       <workItem from="1709042745203" duration="1897000" />
+      <workItem from="1709129840883" duration="2055000" />
     </task>
     <task id="LOCAL-00001" summary="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
       <option name="closed" value="true" />
@@ -466,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Add scroll to end when EnterDown" />
     <MESSAGE value="- Add format in response + add scroll to bottom when enter + add clear function" />
     <MESSAGE value="- Add tab functionnality" />
     <MESSAGE value="- Add error treatment" />
@@ -491,6 +507,7 @@
     <MESSAGE value="Add initial value to reduce and reformat code with prettier" />
     <MESSAGE value="Fix reduce with comma and textarea focus and help fixed" />
     <MESSAGE value="Add support of multi websites for mission and project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add support of multi websites for mission and project" />
+    <MESSAGE value="Add support of new description fields + availability command + certificates command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add support of new description fields + availability command + certificates command" />
   </component>
 </project>

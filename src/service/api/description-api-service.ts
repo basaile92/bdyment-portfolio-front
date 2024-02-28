@@ -6,6 +6,7 @@ export async function getDescription(): Promise<DescriptionDto> {
   const descriptionQuery = gql`
     query description {
       description {
+        photoInHTML
         name
         age {
           timeInHour
@@ -13,6 +14,9 @@ export async function getDescription(): Promise<DescriptionDto> {
           timeInYear
         }
         job
+        linkedin
+        github
+        presentation
       }
     }
   `;

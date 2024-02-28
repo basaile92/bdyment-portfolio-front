@@ -29,10 +29,10 @@ function companyToString(company: CompanyDto): string {
           </div>
           ${displayValueIfPresent(
             company.website,
-            `<a class="website" target="_blank" href="${company.website}">
+            `<a class="link" target="_blank" href="${company.website}">
             ${company.website}
           </a>`,
           )}
           ${displayDatesAndPlace(company.startYear, company.endYear, company.isCurrent, company.place)}
-          ${company.description ? `<br/><div> ${company.description} </div>` : ""}</div>`;
+          ${company.description ? `<br/><div>${company.description}</div>` : ""}</div>`;
 }
