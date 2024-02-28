@@ -10,14 +10,14 @@ export async function availability(parameter: string): Promise<string> {
 }
 
 function availabilityToString(availability: AvailabilityDto): string {
-  return `<div><span class="label">Date:</span><span class="important-value"> ${formatDate(availability.date)}</span></div><br/>`;
+  return `<div>Available from <span class="important-value"> ${formatDate(availability.date)}</span></div><br/>`;
 }
 
 function formatDate(date: Date) {
   return date.toLocaleDateString("en-us", {
     weekday: "long",
     year: "numeric",
-    month: "short",
+    month: "long",
     day: "numeric",
   });
 }
