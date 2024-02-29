@@ -56,7 +56,7 @@ function Prompt(props: any) {
     setCommandLine(HELP_COMMAND);
     setIsLoading(true);
     help("").then((response) => {
-      addHistoryLine(new HistoryLine(HELP_COMMAND, response));
+      props.addHistoryLine(new HistoryLine(HELP_COMMAND, response));
       setCommandLine("");
       setIsLoading(false);
     });

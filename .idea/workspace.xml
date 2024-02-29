@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Add help commands on page load">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Fix help command + fix tab">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/console/Console.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/console/Console.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/advise-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/advise-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,14 +120,6 @@
       <workItem from="1708949306864" duration="30194000" />
       <workItem from="1709042745203" duration="1897000" />
       <workItem from="1709129840883" duration="2205000" />
-    </task>
-    <task id="LOCAL-00001" summary="- Create model history-line&#10;- Create service + DTO: companies, description, help, hobbies, languages, missions, projects, skills, studies&#10;- Reformat with prettier">
-      <option name="closed" value="true" />
-      <created>1708621471274</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1708621471274</updated>
     </task>
     <task id="LOCAL-00002" summary="- Modify api services&#10;- Add keyboard utils&#10;- Create description service and companies service&#10;- Modify console to make it accept the command and display response.">
       <option name="closed" value="true" />
@@ -515,7 +505,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709197270568</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Fix help command + fix tab">
+      <option name="closed" value="true" />
+      <created>1709199645427</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1709199645428</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change url" />
     <MESSAGE value="Add button help and download cv" />
     <MESSAGE value="Add google analytics" />
     <MESSAGE value="Add google search" />
@@ -558,6 +555,7 @@
     <MESSAGE value="Change format of certificate" />
     <MESSAGE value="Make certificate link clickable" />
     <MESSAGE value="Add help commands on page load" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add help commands on page load" />
+    <MESSAGE value="Fix help command + fix tab" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix help command + fix tab" />
   </component>
 </project>
