@@ -52,15 +52,6 @@ function Prompt(props: any) {
   useEffect(() => {
     textAreaRef.current!.focus();
   }, [isLoading]);
-  useEffect(() => {
-    setCommandLine(HELP_COMMAND);
-    setIsLoading(true);
-    help("").then((response) => {
-      addHistoryLine(new HistoryLine(HELP_COMMAND, response));
-      setCommandLine("");
-      setIsLoading(false);
-    });
-  }, []);
   let scrollDown = () => {
     refToScrollDown.current?.scrollIntoView({
       block: "end",
