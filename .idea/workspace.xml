@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Change format of certificate">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Make certificate link clickable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/certificates-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/certificates-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/console/Console.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/console/Console.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
     "npm.start.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/home/bdyment/Documents/prive/bdyment-portfolio-front/node_modules/prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/Users/basaile92/IdeaProjects/bdyment-portfolio-front/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -498,7 +497,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709141996058</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Make certificate link clickable">
+      <option name="closed" value="true" />
+      <created>1709157775648</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1709157775648</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix build graphql" />
     <MESSAGE value="Fix build by removing not used import + mount nodejs ci version to 20" />
     <MESSAGE value="Change url" />
     <MESSAGE value="Add button help and download cv" />
@@ -541,6 +547,7 @@
     <MESSAGE value="Fix date value" />
     <MESSAGE value="Remove package-lock.json" />
     <MESSAGE value="Change format of certificate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change format of certificate" />
+    <MESSAGE value="Make certificate link clickable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make certificate link clickable" />
   </component>
 </project>
