@@ -20,6 +20,8 @@ import {
 } from "../../service/advise-service";
 import submitCommand from "../../service/console-service";
 import { serverError } from "../../service/error-service";
+import { help } from "../../service/command/help-service";
+import { HELP_COMMAND } from "../../service/command-service";
 
 function Prompt(props: any) {
   let [isLoading, setIsLoading] = useState(false);
@@ -50,6 +52,15 @@ function Prompt(props: any) {
   useEffect(() => {
     textAreaRef.current!.focus();
   }, [isLoading]);
+  useEffect(() => {
+    setCommandLine(HELP_COMMAND);
+    setIsLoading(true);
+    help("").then((response) => {
+      addHistoryLine(new HistoryLine(HELP_COMMAND, response));
+      setCommandLine("");
+      setIsLoading(false);
+    });
+  }, []);
   let scrollDown = () => {
     refToScrollDown.current?.scrollIntoView({
       block: "end",
@@ -93,14 +104,16 @@ function Prompt(props: any) {
   };
 
   let advise = () => {
+    let valueToAdviseValue = valueToAdvise;
     if (!adviseModeActivated) {
-      setValueToAdvise(commandLine);
-      const adviseArray = adviseCommandsWhoStartWith(valueToAdvise);
+      valueToAdviseValue = commandLine;
+      setValueToAdvise(valueToAdviseValue);
+      const adviseArray = adviseCommandsWhoStartWith(valueToAdviseValue);
       setAdviseArray(adviseArray);
       setAdviseModeActivated(true);
     }
     const newCommandLineValue = adviseACommandWhoStartWith(
-      valueToAdvise,
+      valueToAdviseValue,
       indexAdvisePicker,
     );
     setCommandLine(newCommandLineValue + " ");

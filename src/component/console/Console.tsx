@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Console.css";
 import Command from "../command/Command";
 import Response from "../response/Response";
@@ -6,7 +6,6 @@ import Prompt from "../prompt/Prompt";
 import Bar from "../bar/Bar";
 import HistoryLine from "../../model/history-line";
 import Help from "../help/Help";
-import { help } from "../../service/command/help-service";
 
 function Console() {
   const [history, setHistory] = useState<HistoryLine[]>([]);
@@ -17,11 +16,6 @@ function Console() {
   const clearHistory = () => {
     setHistory([]);
   };
-  useEffect(() => {
-    help("").then((response) => {
-      addHistoryLine(new HistoryLine("help", response));
-    });
-  }, []);
   return (
     <div>
       <Help helpDisplayed={helpDisplayed} setHelpDisplayed={setHelpDisplayed} />

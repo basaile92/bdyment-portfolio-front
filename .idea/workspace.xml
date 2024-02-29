@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Make certificate link clickable">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Add help commands on page load">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/console/Console.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/console/Console.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/advise-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/advise-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -505,7 +507,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709157775648</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Add help commands on page load">
+      <option name="closed" value="true" />
+      <created>1709197270568</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1709197270568</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix build by removing not used import + mount nodejs ci version to 20" />
     <MESSAGE value="Change url" />
     <MESSAGE value="Add button help and download cv" />
     <MESSAGE value="Add google analytics" />
@@ -548,6 +557,7 @@
     <MESSAGE value="Remove package-lock.json" />
     <MESSAGE value="Change format of certificate" />
     <MESSAGE value="Make certificate link clickable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make certificate link clickable" />
+    <MESSAGE value="Add help commands on page load" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add help commands on page load" />
   </component>
 </project>
