@@ -1,3 +1,5 @@
+import { noSeparation } from "./separation-utils";
+
 export function displayValueIfPresent(
   value: string | null,
   toDisplay: string,
@@ -25,5 +27,8 @@ export function showBetterParameter(parameter: string): string {
 }
 
 export function keepNewLine(value: string): string {
-  return value.replace("\n", "<br/>");
+  return value
+    .split("\n")
+    .map((valSplitted) => `<div>${valSplitted}</div>`)
+    .reduce(noSeparation, "");
 }
