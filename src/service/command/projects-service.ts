@@ -10,7 +10,7 @@ import {
   separateByComma,
   separateByNewLine,
 } from "../../utils/separation-utils";
-import { displayDatesAndPlace } from "../../utils/value-utils";
+import { displayDatesAndPlace, keepNewLine } from "../../utils/value-utils";
 
 export async function projects(parameter: string): Promise<string> {
   if (!parameter) {
@@ -49,7 +49,7 @@ function projectToString(project: ProjectDto): string {
           }
           </div>
           ${displayDatesAndPlace(project.startYear, project.endYear, project.isCurrent)}
-          <br/><div> ${project.description} </div>
+          <br/><div>${keepNewLine(project.description)} </div>
           <br/>
            ${project.skills.length > 0 ? `<div class="italic">${project.skills.map(skillToString).reduce(separateByComma)}</div>` : ""}
           </div>`;

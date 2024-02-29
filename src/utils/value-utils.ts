@@ -23,3 +23,7 @@ export function showBetterParameter(parameter: string): string {
     .replace("{", "<span class='parameter'>{")
     .replace("}", "}</span>");
 }
+
+export function keepNewLine(value: string): string {
+  return value.replace("\n", "<br/>");
+}
