@@ -56,11 +56,11 @@ function Prompt(props: any) {
     setCommandLine(HELP_COMMAND);
     setIsLoading(true);
     help("").then((response) => {
-      props.addHistoryLine(new HistoryLine(HELP_COMMAND, response));
+      addHistoryLine(new HistoryLine(HELP_COMMAND, response));
       setCommandLine("");
       setIsLoading(false);
     });
-  }, []);
+  }, [addHistoryLine]);
   let scrollDown = () => {
     refToScrollDown.current?.scrollIntoView({
       block: "end",
