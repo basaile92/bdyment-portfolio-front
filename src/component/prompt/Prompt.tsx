@@ -20,8 +20,6 @@ import {
 } from "../../service/advise-service";
 import submitCommand from "../../service/console-service";
 import { serverError } from "../../service/error-service";
-import { help } from "../../service/command/help-service";
-import { HELP_COMMAND } from "../../service/command-service";
 
 function Prompt(props: any) {
   let [isLoading, setIsLoading] = useState(false);
