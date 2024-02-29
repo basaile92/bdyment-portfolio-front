@@ -60,7 +60,7 @@ function Prompt(props: any) {
       setCommandLine("");
       setIsLoading(false);
     });
-  }, [addHistoryLine]);
+  }, []);
   let scrollDown = () => {
     refToScrollDown.current?.scrollIntoView({
       block: "end",
