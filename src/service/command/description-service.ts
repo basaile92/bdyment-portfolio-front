@@ -1,6 +1,7 @@
 import { getDescription } from "../api/description-api-service";
 import { AgeDto, DescriptionDto } from "../../dto/description-dto";
 import { parameterError } from "../error-service";
+import { keepNewLine } from "../../utils/value-utils";
 
 export async function description(parameter: string): Promise<string> {
   if (!parameter) {
@@ -13,9 +14,13 @@ function descriptionToString(description: DescriptionDto): string {
   return `<div><span class="label">Name:</span><span class="important-value"> ${description.name}</span></div><br/>
           <div><span class="label">Age:</span> ${ageToString(description.age)}</div><br/>
           <div><span class="label">Job:</span><span class="important-value"> ${description.job}</span></div><br>
-          <div><span class="label">Linked-in:</span><span class="website"> ${description.linkedin}</span></div><br>
-          <div><span class="label">GitHub:</span><span class="website"> ${description.github}</span></div><br>
-          <div><span class="label">Presentation:</span><span class="important-value"> ${description.presentation}</span></div>  `;
+          <div><span class="label">Linked-in:</span><a class="link" target="_blank" href="${description.linkedin}">
+            ${description.linkedin}
+          </a></div><br>
+          <div><span class="label">GitHub:</span><a class="link" target="_blank" href="${description.github}">
+            ${description.github}
+          </a></div><br>
+          <div><span class="label">Presentation:</span><span class="important-value"> ${keepNewLine(description.presentation)}</span></div>  `;
 }
 
 function ageToString(age: AgeDto): string {

@@ -128,6 +128,7 @@ function Prompt(props: any) {
     if (commandLine.split(" ")[0] === "clear") {
       clearHistory();
       setCommandLine("");
+      setIsLoading(false);
     } else
       submitCommand(commandLine)
         .then((response) =>

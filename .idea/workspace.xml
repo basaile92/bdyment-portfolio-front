@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Keep new line in description">
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Fix new line in description + remove console.log">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/value-utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/value-utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/command/description-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/command/description-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,15 +121,8 @@
       <workItem from="1708949306864" duration="30194000" />
       <workItem from="1709042745203" duration="1897000" />
       <workItem from="1709129840883" duration="2205000" />
-      <workItem from="1709220531401" duration="547000" />
-    </task>
-    <task id="LOCAL-00008" summary="Change Favicon and title">
-      <option name="closed" value="true" />
-      <created>1708868667038</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1708868667038</updated>
+      <workItem from="1709220531401" duration="633000" />
+      <workItem from="1709543526215" duration="340000" />
     </task>
     <task id="LOCAL-00009" summary="Fix link which were not clickable">
       <option name="closed" value="true" />
@@ -514,7 +508,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709220696471</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Fix new line in description + remove console.log">
+      <option name="closed" value="true" />
+      <created>1709221150523</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1709221150523</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix mobile version" />
     <MESSAGE value="Fix autocapitalize and autocomplete, fix icons" />
     <MESSAGE value="Fix icons" />
     <MESSAGE value="Fix icon size" />
@@ -557,6 +558,7 @@
     <MESSAGE value="Fix build" />
     <MESSAGE value="Fix help bug" />
     <MESSAGE value="Keep new line in description" />
-    <option name="LAST_COMMIT_MESSAGE" value="Keep new line in description" />
+    <MESSAGE value="Fix new line in description + remove console.log" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix new line in description + remove console.log" />
   </component>
 </project>
