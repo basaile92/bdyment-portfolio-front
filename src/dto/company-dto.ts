@@ -6,5 +6,4 @@ export interface CompanyDto {
   startYear: number;
   endYear: number;
   description: string;
-  isCurrent: boolean;
 }

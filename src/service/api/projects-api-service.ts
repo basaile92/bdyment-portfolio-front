@@ -16,7 +16,6 @@ export async function getProjects(): Promise<ProjectDto[]> {
           name
           category
         }
-        isCurrent
       }
     }
   `;
@@ -39,7 +38,6 @@ export async function getProjectsBySkill(
           name
           category
         }
-        isCurrent
       }
     }
   `;
@@ -61,7 +59,6 @@ export async function getProjectsByYear(year: number): Promise<ProjectDto[]> {
           name
           category
         }
-        isCurrent
       }
     }
   `;

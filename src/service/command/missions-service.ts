@@ -48,7 +48,7 @@ function missionToString(mission: MissionDto): string {
               : ""
           }
           </div>
-          ${displayDatesAndPlace(mission.startYear, mission.endYear, mission.isCurrent, mission.place)}
+          ${displayDatesAndPlace(mission.startYear, mission.endYear, mission.place)}
           <br/><div> ${keepNewLine(mission.description)} </div>
           <br/>
            ${mission.skills.length > 0 ? `<div class="italic">${mission.skills.map(skillToString).reduce(separateByComma)}</div>` : ""}

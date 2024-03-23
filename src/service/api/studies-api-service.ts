@@ -13,7 +13,6 @@ export async function getStudies(): Promise<StudyDto[]> {
         endYear
         diploma
         degree
-        isCurrent
       }
     }
   `;
@@ -31,7 +30,6 @@ export async function getStudiesByYear(year: number): Promise<StudyDto[]> {
         endYear
         diploma
         degree
-        isCurrent
       }
     }
   `;

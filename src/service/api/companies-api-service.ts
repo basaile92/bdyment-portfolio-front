@@ -13,7 +13,6 @@ export async function getCompanies(): Promise<CompanyDto[]> {
         startYear
         endYear
         description
-        isCurrent
       }
     }
   `;
@@ -31,7 +30,6 @@ export async function getCompaniesByYear(year: number): Promise<CompanyDto[]> {
         startYear
         endYear
         description
-        isCurrent
       }
     }
   `;

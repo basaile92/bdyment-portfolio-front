@@ -9,5 +9,4 @@ export interface MissionDto {
   startYear: number;
   endYear: number;
   skills: SkillDto[];
-  isCurrent: boolean;
 }

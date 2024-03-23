@@ -33,6 +33,6 @@ function companyToString(company: CompanyDto): string {
             ${company.website}
           </a>`,
           )}
-          ${displayDatesAndPlace(company.startYear, company.endYear, company.isCurrent, company.place)}
+          ${displayDatesAndPlace(company.startYear, company.endYear, company.place)}
           ${company.description ? `<br/><div>${company.description}</div>` : ""}</div>`;
 }

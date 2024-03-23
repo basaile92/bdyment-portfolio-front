@@ -10,11 +10,10 @@ export function displayValueIfPresent(
 export function displayDatesAndPlace(
   startYear: number,
   endYear: number,
-  isCurrent: boolean,
   place?: string,
 ) {
   return `<div class="italic">
-            ${startYear}${startYear === endYear ? "" : `${!isCurrent ? `-${endYear}` : "~"}`}
+            ${startYear}${startYear === endYear ? "" : `${!endYear ? `-${endYear}` : "~"}`}
             ${place ? "-" : ""}
             ${place ? place : ""}
           </div>`;

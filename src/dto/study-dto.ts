@@ -6,5 +6,4 @@ export interface StudyDto {
   endYear: number;
   diploma: string;
   degree: string;
-  isCurrent: boolean;
 }

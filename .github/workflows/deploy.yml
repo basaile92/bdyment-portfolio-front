@@ -8,9 +8,9 @@ jobs:
     permissions: write-all
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup NodeJS 20
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "20"
       - name: Build front

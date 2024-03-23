@@ -8,5 +8,4 @@ export interface ProjectDto {
   startYear: number;
   endYear: number;
   skills: SkillDto[];
-  isCurrent: boolean;
 }

@@ -48,7 +48,7 @@ function projectToString(project: ProjectDto): string {
               : ""
           }
           </div>
-          ${displayDatesAndPlace(project.startYear, project.endYear, project.isCurrent)}
+          ${displayDatesAndPlace(project.startYear, project.endYear)}
           <br/><div>${keepNewLine(project.description)} </div>
           <br/>
            ${project.skills.length > 0 ? `<div class="italic">${project.skills.map(skillToString).reduce(separateByComma)}</div>` : ""}

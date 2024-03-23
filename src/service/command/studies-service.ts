@@ -23,7 +23,7 @@ function studyToString(study: StudyDto): string {
   return `<div><div>
             <span class="title">${study.label}</span>
           </div>
-          ${displayDatesAndPlace(study.startYear, study.endYear, study.isCurrent, study.place)}
+          ${displayDatesAndPlace(study.startYear, study.endYear, study.place)}
           <div class="second-italic">${study.school}</div>
           <div>${study.diploma} (${study.degree})</div>
           </div>`;

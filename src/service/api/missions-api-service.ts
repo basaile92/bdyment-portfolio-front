@@ -17,7 +17,6 @@ export async function getMissions(): Promise<MissionDto[]> {
           name
           category
         }
-        isCurrent
       }
     }
   `;
@@ -41,7 +40,6 @@ export async function getMissionsBySkill(
           name
           category
         }
-        isCurrent
       }
     }
   `;
@@ -64,7 +62,6 @@ export async function getMissionsByYear(year: number): Promise<MissionDto[]> {
           name
           category
         }
-        isCurrent
       }
     }
   `;
