@@ -13,7 +13,7 @@ export function displayDatesAndPlace(
   place?: string,
 ) {
   return `<div class="italic">
-            ${startYear}${startYear === endYear ? "" : `${!endYear ? `-${endYear}` : "~"}`}
+            ${startYear}${startYear === endYear ? "" : `${endYear ? `-${endYear}` : "~"}`}
             ${place ? "-" : ""}
             ${place ? place : ""}
           </div>`;
