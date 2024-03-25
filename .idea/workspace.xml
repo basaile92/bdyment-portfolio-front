@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Refactor to Hexagonal architecture + test archunit" />
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Update versions">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,14 +179,6 @@
       <workItem from="1711133354119" duration="212000" />
       <workItem from="1711210945630" duration="1323000" />
       <workItem from="1711273916875" duration="27194000" />
-    </task>
-    <task id="LOCAL-00015" summary="Change url">
-      <option name="closed" value="true" />
-      <created>1708955798782</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1708955798782</updated>
     </task>
     <task id="LOCAL-00016" summary="Add button help and download cv">
       <option name="closed" value="true" />
@@ -569,7 +564,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711374027173</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Update versions">
+      <option name="closed" value="true" />
+      <created>1711391087521</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1711391087521</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +590,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Replace buttons by div" />
     <MESSAGE value="Center button icons and fix help position" />
     <MESSAGE value="Add initial value to reduce and reformat code with prettier" />
     <MESSAGE value="Fix reduce with comma and textarea focus and help fixed" />
@@ -612,7 +614,8 @@
     <MESSAGE value="Remove isCurrent" />
     <MESSAGE value="Fix endYear display error" />
     <MESSAGE value="Refactor to Hexagonal architecture + test archunit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor to Hexagonal architecture + test archunit" />
+    <MESSAGE value="Update versions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update versions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
