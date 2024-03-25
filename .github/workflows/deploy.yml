@@ -9,10 +9,15 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v4
+
       - name: Setup NodeJS 20
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
+
+      - name: Run all test
+        run: npm install && npm run test
+
       - name: Build front
         run: yarn add react-scripts && yarn add react-router-dom && yarn add graphql && yarn build
 
