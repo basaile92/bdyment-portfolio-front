@@ -93,7 +93,7 @@
       <recent name="$PROJECT_DIR$/src/domain/command/port/data" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.test">
     <configuration name="Hexagonal Architecture Test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
