@@ -4,171 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Fix endYear display error">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HexagonalArchitecture.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/component/command/CommandComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/component/console/ConsoleComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/initializer/initializer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/data/AvailabilityPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/data/CertificatePort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/data/CompanyPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/data/DescriptionPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/data/HelpPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/data/HobbyPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/data/LanguagePort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/data/MissionPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/data/ProjectPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/data/SkillPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/data/StudyPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/error/ErrorHelpPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/AvailabilityFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/CertificateFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/CompanyFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/DescriptionFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/ErrorCommandFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/ErrorFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/HelpFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/HobbyFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/LanguageFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/MissionFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/ProjectFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/SkillFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/port/format/StudyFormatterPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/service/CertificateService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/service/CompanyService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/service/DescriptionService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/service/ErrorCommandService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/service/ErrorService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/service/HobbyService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/service/LanguageService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/command/service/StudyService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/console/port/FormattedAvailabilityPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/console/port/FormattedCertificatePort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/console/port/FormattedCompanyPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/console/port/FormattedDescriptionPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/console/port/FormattedErrorCommandPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/console/port/FormattedHelpPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/console/port/FormattedHobbyPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/console/port/FormattedLanguagePort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/console/port/FormattedMissionPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/console/port/FormattedProjectPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/console/port/FormattedSkillPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/console/port/FormattedStudyPort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/api/ApiAvailabilityAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/api/ApiCertificateAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/api/ApiCompanyAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/api/ApiDescriptionAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/api/ApiHelpAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/api/ApiHobbyAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/api/ApiLanguageAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/api/ApiMissionAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/api/ApiProjectAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/api/ApiSkillAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/api/ApiStudyAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/error/ErrorHelpAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/AvailabilityFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/CertificateFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/CompanyFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/DescriptionFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/ErrorCommandFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/ErrorFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/HelpFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/HobbyFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/LanguageFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/MissionFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/ProjectFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/SkillFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/StudyFormatterAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/console/adapter/FormattedAvailabilityAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/console/adapter/FormattedCertificateAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/console/adapter/FormattedCompanyAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/console/adapter/FormattedDescriptionAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/console/adapter/FormattedErrorCommandAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/console/adapter/FormattedHelpAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/console/adapter/FormattedHobbyAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/console/adapter/FormattedLanguageAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/console/adapter/FormattedMissionAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/console/adapter/FormattedProjectAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/console/adapter/FormattedSkillAdapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/console/adapter/FormattedStudyAdapter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bdyment-portfolio-front.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bdyment-portfolio-front.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    <list default="true" id="78765185-7ef7-4424-8ec5-2e98520eb0b1" name="Changes" comment="Refactor to Hexagonal architecture + test archunit">
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/bar/Bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/component/bar/BarComponent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/bar/Bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/component/bar/BarComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/command/Command.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/component/command/CommandComponent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/command/Command.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/console/Console.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/component/console/ConsoleComponent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/console/Console.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/help/Help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/component/help/HelpComponent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/help/Help.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/component/help/HelpComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/name/Name.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/component/name/NameComponent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/name/Name.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/component/name/NameComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/prompt/Prompt.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/component/prompt/PromptComponent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/prompt/Prompt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/component/prompt/PromptComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/response/Response.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/component/response/ResponseComponent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/response/Response.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/component/response/ResponseComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/availability-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/model/Availability.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/certificate-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/model/Certificate.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/command-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/model/Command.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/company-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/model/Company.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/description-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/model/Description.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/language-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/model/Language.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/mission-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/model/Mission.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/project-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/model/Project.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/skill-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/model/Skill.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/study-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/model/Study.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/UbuntuMono-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/fonts/UbuntuMono-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/UbuntuMono-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/fonts/UbuntuMono-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/UbuntuMono-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/fonts/UbuntuMono-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/UbuntuMono-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/fonts/UbuntuMono-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/history-line.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/model/HistoryLine.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/advise-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/console/service/AdviseService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/api-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/availability-api-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/certificates-api-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/companies-api-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/description-api-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/help-api-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/hobbies-api-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/languages-api-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/missions-api-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/projects-api-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/skills-api-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/api/studies-api-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/availability-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/service/AvailabilityService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/certificates-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/companies-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/description-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/help-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/service/HelpService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/hobbies-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/languages-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/missions-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/service/MissionService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/projects-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/service/ProjectService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/skills-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/command/service/SkillService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/command/studies-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/console-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/console/service/ConsoleService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/error-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/keyboard-utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/utils/keyboard-utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/separation-utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/separation-utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/type-utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/utils/type-utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/value-utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/command/adapter/format/value-utils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +51,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Jest.Hexagonal Architecture Test (1).executor": "Debug",
+    "Jest.Hexagonal Architecture Test (1).executor": "Run",
     "Jest.Hexagonal Architecture Test.Application without initializer.Should not depend on infrastructure.executor": "Run",
     "Jest.Hexagonal Architecture Test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -254,19 +91,7 @@
       <recent name="$PROJECT_DIR$/src/domain/command/port/data" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
-    <configuration name="Hexagonal Architecture Test (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/HexagonalArchitecture.test.ts" />
-      <test-names>
-        <test-name value="Hexagonal Architecture Test" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.test">
     <configuration name="Hexagonal Architecture Test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -279,17 +104,15 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Hexagonal Architecture Test.Application without initializer.Should not depend on infrastructure" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Hexagonal Architecture Test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
+      <scope-kind value="SUITE" />
       <test-file value="$PROJECT_DIR$/src/HexagonalArchitecture.test.ts" />
       <test-names>
         <test-name value="Hexagonal Architecture Test" />
-        <test-name value="Application without initializer" />
-        <test-name value="Should not depend on infrastructure" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -305,16 +128,25 @@
       </envs>
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Jest.Hexagonal Architecture Test (1)" />
-      <item itemvalue="Jest.Hexagonal Architecture Test.Application without initializer.Should not depend on infrastructure" />
       <item itemvalue="Jest.Hexagonal Architecture Test" />
       <item itemvalue="npm.start" />
+      <item itemvalue="npm.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Hexagonal Architecture Test (1)" />
-        <item itemvalue="Jest.Hexagonal Architecture Test.Application without initializer.Should not depend on infrastructure" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="Jest.Hexagonal Architecture Test" />
         <item itemvalue="Jest.Hexagonal Architecture Test" />
       </list>
     </recent_temporary>
@@ -344,15 +176,7 @@
       <workItem from="1710602736324" duration="4000" />
       <workItem from="1711133354119" duration="212000" />
       <workItem from="1711210945630" duration="1323000" />
-      <workItem from="1711273916875" duration="26625000" />
-    </task>
-    <task id="LOCAL-00014" summary="Change url">
-      <option name="closed" value="true" />
-      <created>1708955233412</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1708955233412</updated>
+      <workItem from="1711273916875" duration="27194000" />
     </task>
     <task id="LOCAL-00015" summary="Change url">
       <option name="closed" value="true" />
@@ -738,7 +562,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711211734390</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Refactor to Hexagonal architecture + test archunit">
+      <option name="closed" value="true" />
+      <created>1711374027173</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1711374027173</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -756,7 +588,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Replace svg icon by png" />
     <MESSAGE value="Replace buttons by div" />
     <MESSAGE value="Center button icons and fix help position" />
     <MESSAGE value="Add initial value to reduce and reformat code with prettier" />
@@ -781,7 +612,8 @@
     <MESSAGE value="Fix description format" />
     <MESSAGE value="Remove isCurrent" />
     <MESSAGE value="Fix endYear display error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix endYear display error" />
+    <MESSAGE value="Refactor to Hexagonal architecture + test archunit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor to Hexagonal architecture + test archunit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
