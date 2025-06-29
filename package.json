@@ -1,6 +1,6 @@
 {
   "name": "cv-front",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "6.4.2",
